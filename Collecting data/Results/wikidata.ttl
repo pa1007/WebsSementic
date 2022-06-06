@@ -1,0 +1,4339 @@
+@prefix pro: <http://api.pa1007.dev/ontology/> .
+@prefix dat: <http://api.pa1007.dev/data/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wds: <http://www.wikidata.org/entity/statement/> .
+@prefix wdv: <http://www.wikidata.org/value/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix hint: <http://www.bigdata.com/queryHints#> .
+@prefix bd: <http://www.bigdata.com/rdf#> .
+@prefix bds: <http://www.bigdata.com/rdf/search#> .
+@prefix psn: <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix pqn: <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix prn: <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix mwapi: <https://www.mediawiki.org/ontology#API/> .
+@prefix gas: <http://www.bigdata.com/rdf/gas#> .
+@prefix wdtn: <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix psv: <http://www.wikidata.org/prop/statement/value/> .
+@prefix ps: <http://www.wikidata.org/prop/statement/> .
+@prefix pqv: <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix prv: <http://www.wikidata.org/prop/reference/value/> .
+@prefix pr: <http://www.wikidata.org/prop/reference/> .
+@prefix wdno: <http://www.wikidata.org/prop/novalue/> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix wdata: <http://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix wdref: <http://www.wikidata.org/reference/> .
+@prefix schema: <http://schema.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix geof: <http://www.opengis.net/def/geosparql/function/> .
+@prefix mediawiki: <https://www.mediawiki.org/ontology#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+dat:1942 a pro:Game ;
+	pro:wikidata wd:Q55532 ;
+	rdfs:label "1942"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/P-38%202.jpg> ;
+	pro:platforms wd:Q23882 ;
+	pro:dev wd:Q14428 ;
+	pro:publisher wd:Q14428 ;
+	pro:intern dat:1942 ;
+	pro:platforms wd:Q48493 , wd:Q99775 ;
+	pro:publisher wd:Q1330823 ;
+	pro:platforms wd:Q172742 , wd:Q192851 , wd:Q478829 , wd:Q853547 .
+
+dat:Keyboardmania a pro:Game ;
+	pro:wikidata wd:Q278270 ;
+	rdfs:label "Keyboardmania"@en ;
+	pro:genre wd:Q584105 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Keyboardmania%20Cabinet.jpg> ;
+	pro:platforms wd:Q10680 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Keyboardmania .
+
+dat:The_Simpsons a pro:Game ;
+	pro:wikidata wd:Q1707018 ;
+	rdfs:label "The Simpsons"@en ;
+	pro:genre wd:Q401831 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Simpsons%20Arcade%20Game.jpg> ;
+	pro:platforms wd:Q1545600 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:The_Simpsons ;
+	pro:genre wd:Q192851 , wd:Q343568 ;
+	pro:platforms wd:Q99775 , wd:Q48493 , wd:Q170434 .
+
+dat:Frogger a pro:Game ;
+	pro:wikidata wd:Q524267 ;
+	rdfs:label "Frogger"@en ;
+	pro:genre wd:Q270948 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Vglfrogger.jpg> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Frogger ;
+	pro:platforms wd:Q13522376 , wd:Q170323 , wd:Q183259 , wd:Q186437 , wd:Q203992 , wd:Q206261 , wd:Q4885200 , wd:Q610305 , wd:Q743222 , wd:Q853547 , wd:Q918232 , wd:Q1046862 , wd:Q1238768 , wd:Q1406 , wd:Q10676 , wd:Q10677 , wd:Q10683 , wd:Q23882 , wd:Q48493 .
+
+<http://api.pa1007.dev/data/Sunset_Riders_X_&_Sunset_Fingers_X_for_SNES> a pro:Game ;
+	pro:wikidata wd:Q941354 ;
+	rdfs:label "Sunset Riders X & Sunset Fingers X for SNES"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Sunsetrider.jpg> ;
+	pro:platforms wd:Q10676 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern <http://api.pa1007.dev/data/Sunset_Riders_X_&_Sunset_Fingers_X_for_SNES> ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20M%C3%A9canique%20189.JPG> ;
+	pro:platforms wd:Q183259 , wd:Q192851 , wd:Q667808 .
+
+dat:Para_Para_Paradise a pro:Game ;
+	pro:wikidata wd:Q1191800 ;
+	rdfs:label "Para Para Paradise"@en ;
+	pro:genre wd:Q584105 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/ParaParaParadise%202ndMIX.jpg> ;
+	pro:platforms wd:Q10680 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Para_Para_Paradise ;
+	pro:platforms wd:Q192851 .
+
+dat:DuckTales a pro:Game ;
+	pro:wikidata wd:Q933328 ;
+	rdfs:label "DuckTales"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Ducktales%20cartridge.jpg> ;
+	pro:platforms wd:Q172742 ;
+	pro:dev wd:Q14428 ;
+	pro:publisher wd:Q14428 ;
+	pro:intern dat:DuckTales ;
+	pro:platforms wd:Q186437 ;
+	pro:publisher wd:Q1229035 .
+
+dat:Pro_Evolution_Soccer_2012 a pro:Game ;
+	pro:wikidata wd:Q1315644 ;
+	rdfs:label "Pro Evolution Soccer 2012"@en ;
+	pro:genre wd:Q1478420 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pes%202012%20logo.PNG> ;
+	pro:platforms wd:Q170325 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Pro_Evolution_Soccer_2012 ;
+	pro:platforms wd:Q1406 , wd:Q8079 , wd:Q10683 , wd:Q10680 , wd:Q94 , wd:Q48263 , wd:Q48493 .
+
+dat:Street_Fighter a pro:Game ;
+	pro:wikidata wd:Q1503511 ;
+	rdfs:label "Street Fighter"@en ;
+	pro:genre wd:Q846224 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Streetfighter%20Console.jpg> ;
+	pro:platforms wd:Q478829 ;
+	pro:dev wd:Q14428 ;
+	pro:publisher wd:Q14428 ;
+	pro:intern dat:Street_Fighter ;
+	pro:platforms wd:Q1057377 , wd:Q23882 , wd:Q99775 , wd:Q170434 .
+
+dat:Halo_4 a pro:Game ;
+	pro:wikidata wd:Q45028 ;
+	rdfs:label "Halo 4"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/E3%20Expo%202012%20-%20Microsoft%20booth%20-%20Halo%204%20warthog.jpg> ;
+	pro:platforms wd:Q48263 ;
+	pro:dev wd:Q24228 ;
+	pro:publisher wd:Q73801 ;
+	pro:intern dat:Halo_4 ;
+	pro:platforms wd:Q13361286 .
+
+dat:Dance_Maniax a pro:Game ;
+	pro:wikidata wd:Q842019 ;
+	rdfs:label "Dance Maniax"@en ;
+	pro:genre wd:Q584105 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Dance%20Maniax%202nd%20Mix.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Dance_Maniax .
+
+dat:Pro_Evolution_Soccer_2013 a pro:Game ;
+	pro:wikidata wd:Q1987250 ;
+	rdfs:label "Pro Evolution Soccer 2013"@en ;
+	pro:genre wd:Q1478420 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pes%202013%20logo.png> ;
+	pro:platforms wd:Q170325 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Pro_Evolution_Soccer_2013 ;
+	pro:platforms wd:Q1406 , wd:Q8079 , wd:Q10683 , wd:Q10680 , wd:Q94 , wd:Q48263 , wd:Q48493 .
+
+dat:Steel_Battalion a pro:Game ;
+	pro:wikidata wd:Q3497777 ;
+	rdfs:label "Steel Battalion"@en ;
+	pro:genre wd:Q4451239 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Steel%20Battalion%20controllers.jpg> ;
+	pro:platforms wd:Q132020 ;
+	pro:dev wd:Q14428 ;
+	pro:publisher wd:Q14428 ;
+	pro:intern dat:Steel_Battalion ;
+	pro:genre wd:Q270948 .
+
+dat:Dance_Dance_Revolution_Kids a pro:Game ;
+	pro:wikidata wd:Q5215088 ;
+	rdfs:label "Dance Dance Revolution Kids"@en ;
+	pro:genre wd:Q2016457 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Dance%20Dance%20Revolution%20Kids%20arcade%20machine.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Dance_Dance_Revolution_Kids ;
+	pro:genre wd:Q584105 .
+
+dat:Dance_Dance_Revolution_X2 a pro:Game ;
+	pro:wikidata wd:Q5215110 ;
+	rdfs:label "Dance Dance Revolution X2"@en ;
+	pro:genre wd:Q2016457 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/DDR%20X2.png> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Dance_Dance_Revolution_X2 ;
+	pro:genre wd:Q584105 .
+
+dat:Dance_Dance_Revolution_Solo_2000 a pro:Game ;
+	pro:wikidata wd:Q5215093 ;
+	rdfs:label "Dance Dance Revolution Solo 2000"@en ;
+	pro:genre wd:Q2016457 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Dance%20Dance%20Revolution%20Solo%202000%20arcade%20machine.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Dance_Dance_Revolution_Solo_2000 ;
+	pro:genre wd:Q584105 .
+
+dat:Beatmania_III a pro:Game ;
+	pro:wikidata wd:Q3266542 ;
+	rdfs:label "Beatmania III"@en ;
+	pro:genre wd:Q584105 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/BeatmaniaIII-logo.png> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Beatmania_III .
+
+dat:Juno_First a pro:Game ;
+	pro:wikidata wd:Q2753199 ;
+	rdfs:label "Juno First"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Juno%20First%20-%20Atari%202600%20screenshot%202.png> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Juno_First ;
+	pro:platforms wd:Q206261 , wd:Q853547 , wd:Q1406 , wd:Q48263 .
+
+dat:Plan_9_from_Outer_Space a pro:Game ;
+	pro:wikidata wd:Q7200875 ;
+	rdfs:label "Plan 9 from Outer Space"@en ;
+	pro:genre wd:Q23916 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Plan%209%20Alternative%20poster.jpg> ;
+	pro:platforms wd:Q170434 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q2274654 ;
+	pro:intern dat:Plan_9_from_Outer_Space .
+
+dat:Donkey_Kong a pro:Game ;
+	pro:wikidata wd:Q12384 ;
+	rdfs:label "Donkey Kong"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Donkey%20Kong%20arcade.jpg> ;
+	pro:platforms wd:Q753600 ;
+	pro:dev wd:Q8093 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Donkey_Kong ;
+	pro:platforms wd:Q853547 , wd:Q918232 , wd:Q1046862 , wd:Q23882 , wd:Q99775 , wd:Q100047 , wd:Q135321 , wd:Q170434 , wd:Q172742 , wd:Q188642 , wd:Q192851 , wd:Q206261 .
+
+dat:Wordament a pro:Game ;
+	pro:wikidata wd:Q15244203 ;
+	rdfs:label "Wordament"@en ;
+	pro:genre wd:Q15220419 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Wordament%20Board.png> ;
+	pro:platforms wd:Q94 ;
+	pro:dev wd:Q73801 ;
+	pro:publisher wd:Q73801 ;
+	pro:intern dat:Wordament ;
+	pro:platforms wd:Q48493 , wd:Q4885200 .
+
+dat:Pro_Evolution_Soccer_2019 a pro:Game ;
+	pro:wikidata wd:Q52935749 ;
+	rdfs:label "Pro Evolution Soccer 2019"@en ;
+	pro:genre wd:Q1478420 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pes%202019%20logo.svg> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Pro_Evolution_Soccer_2019 ;
+	pro:platforms wd:Q1406 , wd:Q94 , wd:Q48493 , wd:Q13361286 .
+
+dat:The_Legend_of_Zelda a pro:Game ;
+	pro:wikidata wd:Q12395 ;
+	rdfs:label "The Legend of Zelda"@en ;
+	pro:genre wd:Q343568 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Legend%20of%20Zelda%20-%20Golden%20Catridge.jpg> ;
+	pro:platforms wd:Q135321 ;
+	pro:dev wd:Q8093 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:The_Legend_of_Zelda ;
+	pro:platforms wd:Q172742 .
+
+dat:Metal_Gear_Survive a pro:Game ;
+	pro:wikidata wd:Q27534668 ;
+	rdfs:label "Metal Gear Survive"@en ;
+	pro:genre wd:Q21030988 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Metal%20Gear%20Survive%20Simple%20Logo.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q45700 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Metal_Gear_Survive ;
+	pro:genre wd:Q27670585 ;
+	pro:platforms wd:Q13361286 ;
+	pro:genre wd:Q343568 ;
+	pro:platforms wd:Q5014725 .
+
+dat:Second_Life a pro:Game ;
+	pro:wikidata wd:Q106827 ;
+	rdfs:label "Second Life"@en ;
+	pro:genre wd:Q444835 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Second%20Life%2011th%20Birthday%20Live%20Drax%20Files%20Radio%20Hour.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q86853 ;
+	pro:publisher wd:Q86853 ;
+	pro:intern dat:Second_Life ;
+	pro:platforms wd:Q1406 , wd:Q14116 , wd:Q43627 .
+
+dat:Killing_Floor a pro:Game ;
+	pro:wikidata wd:Q130887 ;
+	rdfs:label "Killing Floor"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Killing%20Floor%20Biohazard1.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q130763 ;
+	pro:publisher wd:Q130763 ;
+	pro:intern dat:Killing_Floor ;
+	pro:platforms wd:Q1406 , wd:Q14116 .
+
+dat:Forza_Motorsport_4 a pro:Game ;
+	pro:wikidata wd:Q31560 ;
+	rdfs:label "Forza Motorsport 4"@en ;
+	pro:genre wd:Q1417032 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/E3%202011%20-%20Forza%20Motorsport%204%20%28Xbox%29%20%285822123385%29.jpg> ;
+	pro:platforms wd:Q48263 ;
+	pro:dev wd:Q130729 ;
+	pro:publisher wd:Q73801 ;
+	pro:intern dat:Forza_Motorsport_4 .
+
+dat:Killing_Floor pro:genre wd:Q185029 , wd:Q333967 .
+
+dat:Donkey_Kong_3 a pro:Game ;
+	pro:wikidata wd:Q390291 ;
+	rdfs:label "Donkey Kong 3"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Game%26watch-donkey-kong-3.jpg> ;
+	pro:platforms wd:Q172742 ;
+	pro:dev wd:Q8093 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Donkey_Kong_3 .
+
+dat:Tetris_DS a pro:Game ;
+	pro:wikidata wd:Q553702 ;
+	rdfs:label "Tetris DS"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Tetris%20DS%20home%20screen.jpg> ;
+	pro:platforms wd:Q170323 ;
+	pro:dev wd:Q8093 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Tetris_DS .
+
+dat:Ultimate_Mortal_Kombat_3 a pro:Game ;
+	pro:wikidata wd:Q1313980 ;
+	rdfs:label "Ultimate Mortal Kombat 3"@en ;
+	pro:genre wd:Q846224 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Festival%20du%20jeu%20video%2020080926%20032.jpg> ;
+	pro:platforms wd:Q10676 ;
+	pro:dev wd:Q149947 ;
+	pro:publisher wd:Q1403157 ;
+	pro:intern dat:Ultimate_Mortal_Kombat_3 ;
+	pro:platforms wd:Q10680 , wd:Q48493 , wd:Q170323 , wd:Q183259 , wd:Q186437 , wd:Q188642 , wd:Q229429 .
+
+dat:Splatoon_2 a pro:Game ;
+	pro:wikidata wd:Q28129061 ;
+	rdfs:label "Splatoon 2"@en ;
+	pro:genre wd:Q270948 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Splatoon%202.svg> ;
+	pro:platforms wd:Q19610114 ;
+	pro:dev wd:Q8093 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Splatoon_2 ;
+	pro:genre wd:Q380266 .
+
+dat:Mother a pro:Game ;
+	pro:wikidata wd:Q2323709 ;
+	rdfs:label "Mother"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mother%20Famicom%20cartridge.jpg> ;
+	pro:platforms wd:Q172742 ;
+	pro:dev wd:Q8093 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Mother .
+
+dat:Devil_World a pro:Game ;
+	pro:wikidata wd:Q745044 ;
+	rdfs:label "Devil World"@en ;
+	pro:genre wd:Q13717398 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Famicom%20%27Devil%20World%27%20cartridge%20%285158740395%29.jpg> ;
+	pro:platforms wd:Q172742 ;
+	pro:dev wd:Q8093 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Devil_World .
+
+dat:Spy_Hunter a pro:Game ;
+	pro:wikidata wd:Q1788165 ;
+	rdfs:label "Spy Hunter"@en ;
+	pro:genre wd:Q2070892 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Spy%20Hunter%20arcade%20cabinet.jpg> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q149947 ;
+	pro:publisher wd:Q149947 ;
+	pro:intern dat:Spy_Hunter ;
+	pro:platforms wd:Q13522376 , wd:Q132020 , wd:Q170434 , wd:Q172742 , wd:Q182172 , wd:Q188642 , wd:Q202712 , wd:Q203992 , wd:Q206261 , wd:Q249075 , wd:Q478829 , wd:Q749976 , wd:Q1046862 , wd:Q1406 , wd:Q10680 , wd:Q23882 .
+
+dat:Mortal_Kombat a pro:Game ;
+	pro:wikidata wd:Q150294 ;
+	rdfs:label "Mortal Kombat"@en ;
+	pro:genre wd:Q846224 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Festival%20du%20jeu%20video%2020080926%20032.jpg> ;
+	pro:platforms wd:Q751719 ;
+	pro:dev wd:Q149947 ;
+	pro:publisher wd:Q149947 ;
+	pro:intern dat:Mortal_Kombat ;
+	pro:platforms wd:Q1047516 , wd:Q1406 , wd:Q10676 , wd:Q10680 , wd:Q100047 , wd:Q132020 , wd:Q170325 , wd:Q170434 , wd:Q183259 , wd:Q186437 , wd:Q192851 , wd:Q209868 .
+
+dat:Mario_Kart_64 a pro:Game ;
+	pro:wikidata wd:Q1046604 ;
+	rdfs:label "Mario Kart 64"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Stockholms%20Spelmuseum%20by%20BugWarp%20%2843%29.jpg> ;
+	pro:platforms wd:Q184839 ;
+	pro:dev wd:Q170420 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Mario_Kart_64 .
+
+dat:Super_Mario_64 a pro:Game ;
+	pro:wikidata wd:Q216995 ;
+	rdfs:label "Super Mario 64"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/N64%20Clear%20Blue%20with%20Super%20Mario%2064%2020100603.jpg> ;
+	pro:platforms wd:Q184839 ;
+	pro:dev wd:Q170420 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Super_Mario_64 ;
+	pro:genre wd:Q104819482 .
+
+dat:The_Legend_of_Zelda pro:dev wd:Q170420 .
+
+dat:Pushmo a pro:Game ;
+	pro:wikidata wd:Q634615 ;
+	rdfs:label "Pushmo"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/PushmoQR.JPG> ;
+	pro:platforms wd:Q203597 ;
+	pro:dev wd:Q150001 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Pushmo .
+
+dat:Phantasy_Star_II a pro:Game ;
+	pro:wikidata wd:Q721001 ;
+	rdfs:label "Phantasy Star II"@en ;
+	pro:genre wd:Q85422949 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Phantasy-Star-2-1989-Game-Scene.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q122741 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Phantasy_Star_II ;
+	pro:platforms wd:Q1406 ;
+	pro:genre wd:Q744038 ;
+	pro:platforms wd:Q10676 , wd:Q10680 , wd:Q14116 , wd:Q48493 .
+
+dat:Wii_Sports a pro:Game ;
+	pro:wikidata wd:Q71936 ;
+	rdfs:label "Wii Sports"@en ;
+	pro:genre wd:Q868217 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Duo%20playing%20Wii%20Sports.jpg> ;
+	pro:platforms wd:Q8079 ;
+	pro:dev wd:Q170420 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Wii_Sports .
+
+dat:Wii_Fit a pro:Game ;
+	pro:wikidata wd:Q840121 ;
+	rdfs:label "Wii Fit"@en ;
+	pro:genre wd:Q2016457 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Wiifit.jpg> ;
+	pro:platforms wd:Q8079 ;
+	pro:dev wd:Q170420 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Wii_Fit .
+
+dat:Super_Mario_Land a pro:Game ;
+	pro:wikidata wd:Q647249 ;
+	rdfs:label "Super Mario Land"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/M%20land.jpg> ;
+	pro:platforms wd:Q186437 ;
+	pro:dev wd:Q170420 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Super_Mario_Land .
+
+dat:Passage a pro:Game ;
+	pro:wikidata wd:Q2055753 ;
+	rdfs:label "Passage"@en ;
+	pro:genre wd:Q23916 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Passage%203%20by%20Jason%20Rohrer%20screenshot.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q92678 ;
+	pro:publisher wd:Q92678 ;
+	pro:intern dat:Passage ;
+	pro:platforms wd:Q14116 , wd:Q48493 ;
+	pro:genre wd:Q273383 .
+
+dat:The_Castle_Doctrine a pro:Game ;
+	pro:wikidata wd:Q15710729 ;
+	rdfs:label "The Castle Doctrine"@en ;
+	pro:genre wd:Q862490 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Castle%20Doctrine%20house%20screenshot.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q92678 ;
+	pro:publisher wd:Q92678 ;
+	pro:intern dat:The_Castle_Doctrine ;
+	pro:platforms wd:Q1406 , wd:Q14116 ;
+	pro:genre wd:Q472055 , wd:Q858523 , wd:Q1143132 .
+
+dat:Diamond_Trust_of_London a pro:Game ;
+	pro:wikidata wd:Q13405663 ;
+	rdfs:label "Diamond Trust of London"@en ;
+	pro:genre wd:Q2176159 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Diamond%20Trust%20of%20London.png> ;
+	pro:platforms wd:Q170323 ;
+	pro:dev wd:Q92678 ;
+	pro:publisher wd:Q3576011 ;
+	pro:intern dat:Diamond_Trust_of_London .
+
+dat:The_Castle_Doctrine pro:genre wd:Q3739535 , wd:Q54767 .
+
+dat:Grand_Theft_Auto_V a pro:Game ;
+	pro:wikidata wd:Q17452 ;
+	rdfs:label "Grand Theft Auto V"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Grand%20Army%20Plaza%20IRT%20E-Pkwy%3B%20Bike%20Racks.JPG> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q94893 ;
+	pro:publisher wd:Q94912 ;
+	pro:intern dat:Grand_Theft_Auto_V ;
+	pro:platforms wd:Q10683 , wd:Q48263 ;
+	pro:genre wd:Q380266 ;
+	pro:publisher wd:Q94933 , wd:Q4434012 ;
+	pro:genre wd:Q343568 ;
+	pro:platforms wd:Q13361286 , wd:Q5014725 , wd:Q63184502 , wd:Q98973368 .
+
+dat:Doom a pro:Game ;
+	pro:wikidata wd:Q189784 ;
+	rdfs:label "Doom"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Freedoom001%2001.png> ;
+	pro:platforms wd:Q19610114 ;
+	pro:dev wd:Q204474 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Doom ;
+	pro:publisher wd:Q200491 ;
+	pro:platforms wd:Q388 ;
+	pro:publisher wd:Q207922 ;
+	pro:platforms wd:Q1406 , wd:Q10676 , wd:Q10677 , wd:Q10683 , wd:Q14116 , wd:Q14646 , wd:Q94 , wd:Q48263 , wd:Q48493 , wd:Q13522376 , wd:Q132020 , wd:Q170434 , wd:Q183259 , wd:Q188642 , wd:Q200912 , wd:Q229429 , wd:Q471094 , wd:Q627611 , wd:Q650601 , wd:Q1063978 , wd:Q1353312 .
+
+dat:Portal_2 a pro:Game ;
+	pro:wikidata wd:Q279446 ;
+	rdfs:label "Portal 2"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Portal%202%20pax%20prime%202010.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q193559 ;
+	pro:publisher wd:Q173941 ;
+	pro:intern dat:Portal_2 ;
+	pro:publisher wd:Q193559 ;
+	pro:platforms wd:Q1406 , wd:Q10683 , wd:Q14116 , wd:Q48263 ;
+	pro:genre wd:Q27670585 , wd:Q54767 , wd:Q197949 .
+
+dat:Team_Fortress_2 a pro:Game ;
+	pro:wikidata wd:Q382108 ;
+	rdfs:label "Team Fortress 2"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Team%20Fortress%202%20%282809801251%29.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q193559 ;
+	pro:publisher wd:Q193559 ;
+	pro:intern dat:Team_Fortress_2 ;
+	pro:platforms wd:Q1406 , wd:Q10683 , wd:Q14116 , wd:Q48263 .
+
+dat:Doom pro:genre wd:Q107542272 , wd:Q27670585 .
+
+dat:Mass_Effect_2 a pro:Game ;
+	pro:wikidata wd:Q725057 ;
+	rdfs:label "Mass Effect 2"@en ;
+	pro:genre wd:Q380266 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/PAX%202009%20-%20Mass%20Effect%202%20booth%20%283899545854%29.jpg> ;
+	pro:platforms wd:Q48263 ;
+	pro:dev wd:Q219758 ;
+	pro:publisher wd:Q173941 ;
+	pro:intern dat:Mass_Effect_2 ;
+	pro:genre wd:Q27670585 ;
+	pro:platforms wd:Q1406 , wd:Q10683 ;
+	pro:genre wd:Q85422949 , wd:Q744038 , wd:Q107542373 , wd:Q85341917 .
+
+dat:Doom_II a pro:Game ;
+	pro:wikidata wd:Q755186 ;
+	rdfs:label "Doom II"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Prboom%20and%20Freedoom.png> ;
+	pro:platforms wd:Q19610114 ;
+	pro:dev wd:Q204474 ;
+	pro:publisher wd:Q200491 ;
+	pro:intern dat:Doom_II ;
+	pro:publisher wd:Q684425 , wd:Q930354 ;
+	pro:genre wd:Q24925 ;
+	pro:publisher wd:Q1481820 ;
+	pro:platforms wd:Q388 , wd:Q1406 , wd:Q10683 , wd:Q94 , wd:Q47604 , wd:Q48263 , wd:Q48493 , wd:Q13522376 , wd:Q170434 , wd:Q188642 , wd:Q189794 , wd:Q308993 .
+
+dat:Out_Run a pro:Game ;
+	pro:wikidata wd:Q1142287 ;
+	rdfs:label "Out Run"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Outrun-sit-down-cabinet.jpg> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q294587 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Out_Run ;
+	pro:platforms wd:Q100047 , wd:Q170434 , wd:Q188642 , wd:Q192851 , wd:Q209868 , wd:Q478829 , wd:Q627302 , wd:Q667808 , wd:Q751719 , wd:Q853547 , wd:Q1057377 , wd:Q19610114 , wd:Q10676 , wd:Q23882 .
+
+dat:Daytona_USA a pro:Game ;
+	pro:wikidata wd:Q1326048 ;
+	rdfs:label "Daytona USA"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Daytona%20Twin.jpg> ;
+	pro:platforms wd:Q184198 ;
+	pro:dev wd:Q294587 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Daytona_USA ;
+	pro:platforms wd:Q192851 , wd:Q200912 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Sega%20Daytona%20USA%20Arcade.jpg> ;
+	pro:platforms wd:Q1406 .
+
+dat:Turbo_Outrun a pro:Game ;
+	pro:wikidata wd:Q2567511 ;
+	rdfs:label "Turbo Outrun"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/TurboOutRun.jpg> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q294587 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Turbo_Outrun ;
+	pro:platforms wd:Q100047 , wd:Q170434 , wd:Q478829 , wd:Q627302 , wd:Q10676 , wd:Q23882 .
+
+dat:Virtua_Racing a pro:Game ;
+	pro:wikidata wd:Q1849822 ;
+	rdfs:label "Virtua Racing"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/VR%20Virtua%20Racing.jpg> ;
+	pro:platforms wd:Q1063978 ;
+	pro:dev wd:Q294587 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Virtua_Racing ;
+	pro:platforms wd:Q10676 , wd:Q10680 , wd:Q904697 .
+
+dat:Final_Fantasy_XIII a pro:Game ;
+	pro:wikidata wd:Q390595 ;
+	rdfs:label "Final Fantasy XIII"@en ;
+	pro:genre wd:Q27670585 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Final%20Fantasy%20XIII%20wordmark.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q207784 ;
+	pro:publisher wd:Q207784 ;
+	pro:intern dat:Final_Fantasy_XIII ;
+	pro:platforms wd:Q10683 , wd:Q94 , wd:Q48263 , wd:Q48493 ;
+	pro:genre wd:Q744038 , wd:Q107542272 .
+
+dat:Hang-On a pro:Game ;
+	pro:wikidata wd:Q1575476 ;
+	rdfs:label "Hang-On"@en ;
+	pro:genre wd:Q192851 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Sega%20Hang%20on%20Arcade%20Automat.jpg> ;
+	pro:platforms wd:Q667808 ;
+	pro:dev wd:Q294587 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Hang-On ;
+	pro:platforms wd:Q1136956 .
+
+dat:Space_Harrier a pro:Game ;
+	pro:wikidata wd:Q1707792 ;
+	rdfs:label "Space Harrier"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Spaceharrier.jpg> ;
+	pro:platforms wd:Q10680 ;
+	pro:dev wd:Q294587 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Space_Harrier ;
+	pro:platforms wd:Q23882 .
+
+dat:Hang-On pro:genre wd:Q860750 .
+
+dat:Daytona_USA_2 a pro:Game ;
+	pro:wikidata wd:Q1432516 ;
+	rdfs:label "Daytona USA 2"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Daytonausa2.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q294587 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Daytona_USA_2 .
+
+dat:Space_Harrier pro:platforms wd:Q99775 , wd:Q100047 , wd:Q172742 , wd:Q203597 , wd:Q209868 , wd:Q478829 , wd:Q627302 , wd:Q667808 , wd:Q1057377 , wd:Q1063978 .
+
+<http://api.pa1007.dev/data/Q*bert> a pro:Game ;
+	pro:wikidata wd:Q1565343 ;
+	rdfs:label "Q*bert"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Commodore%2064%20at%20Video%20Game%20Museum%20in%20Berlin%20%2845946155851%29.jpg> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q207922 ;
+	pro:publisher wd:Q1151411 ;
+	pro:intern <http://api.pa1007.dev/data/Q*bert> ;
+	pro:platforms wd:Q853547 , wd:Q918232 , wd:Q1046862 .
+
+dat:World_of_Tanks a pro:Game ;
+	pro:wikidata wd:Q590342 ;
+	rdfs:label "World of Tanks"@en ;
+	pro:genre wd:Q4451239 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/E3%202011%20-%20World%20of%20Tanks%20booth%20%28Wargaming.net%29%20%285822683674%29.jpg> ;
+	pro:platforms wd:Q13361286 ;
+	pro:dev wd:Q372471 ;
+	pro:publisher wd:Q372471 ;
+	pro:intern dat:World_of_Tanks ;
+	pro:platforms wd:Q5014725 , wd:Q14116 , wd:Q48263 , wd:Q48493 .
+
+dat:StarCraft a pro:Game ;
+	pro:wikidata wd:Q165929 ;
+	rdfs:label "StarCraft"@en ;
+	pro:genre wd:Q208189 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Starcraft%20Gamescom%202017%20%2836851382835%29.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q178824 ;
+	pro:publisher wd:Q178824 ;
+	pro:intern dat:StarCraft ;
+	pro:platforms wd:Q14116 , wd:Q13522376 ;
+	pro:publisher wd:Q8093 ;
+	pro:platforms wd:Q184839 .
+
+<http://api.pa1007.dev/data/Q*bert> pro:platforms wd:Q99775 , wd:Q172742 , wd:Q184198 , wd:Q186437 , wd:Q206261 , wd:Q207539 ;
+	pro:genre wd:Q54767 ;
+	pro:platforms wd:Q743222 , wd:Q10677 , wd:Q10683 , wd:Q23882 , wd:Q48493 .
+
+dat:R-Type a pro:Game ;
+	pro:wikidata wd:Q55673 ;
+	rdfs:label "R-Type"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/R-Type%20video%20game%20machine.jpg> ;
+	pro:platforms wd:Q48493 ;
+	pro:dev wd:Q383538 ;
+	pro:publisher wd:Q617752 ;
+	pro:intern dat:R-Type ;
+	pro:genre wd:Q27670585 ;
+	pro:platforms wd:Q15613992 , wd:Q23882 , wd:Q94 , wd:Q99775 , wd:Q100047 , wd:Q193321 , wd:Q202375 , wd:Q209868 , wd:Q478829 , wd:Q627302 , wd:Q853547 , wd:Q1057377 .
+
+dat:Basic_Math a pro:Game ;
+	pro:wikidata wd:Q130678 ;
+	rdfs:label "Basic Math"@en ;
+	pro:genre wd:Q1224999 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Basic%20Math%20Atari%202600%20screenshot1a.png> ;
+	pro:platforms wd:Q206261 ;
+	pro:dev wd:Q207922 ;
+	pro:publisher wd:Q207922 ;
+	pro:intern dat:Basic_Math .
+
+dat:Duke_Nukem_Forever a pro:Game ;
+	pro:wikidata wd:Q962129 ;
+	rdfs:label "Duke Nukem Forever"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Girls%20of%20E3%202011%20No.15.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q229459 ;
+	pro:publisher wd:Q94937 ;
+	pro:intern dat:Duke_Nukem_Forever ;
+	pro:platforms wd:Q10683 , wd:Q14116 , wd:Q48263 ;
+	pro:genre wd:Q27670585 .
+
+dat:Phantasy_Star_Online_2 a pro:Game ;
+	pro:wikidata wd:Q2709892 ;
+	rdfs:label "Phantasy Star Online 2"@en ;
+	pro:genre wd:Q175173 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Phantasy%20Star%20Online%20cosplay%20models%20%282012%29.jpg> ;
+	pro:platforms wd:Q188808 ;
+	pro:dev wd:Q122741 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Phantasy_Star_Online_2 ;
+	pro:publisher wd:Q4806327 ;
+	pro:platforms wd:Q5014725 ;
+	pro:genre wd:Q1422746 ;
+	pro:platforms wd:Q19610114 , wd:Q1406 , wd:Q94 , wd:Q48493 .
+
+dat:Power_Drift a pro:Game ;
+	pro:wikidata wd:Q3371596 ;
+	rdfs:label "Power Drift"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/POWER%20DRIFT.jpg> ;
+	pro:platforms wd:Q23882 ;
+	pro:dev wd:Q294587 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Power_Drift ;
+	pro:platforms wd:Q99775 , wd:Q100047 , wd:Q170434 , wd:Q478829 , wd:Q627302 , wd:Q853547 .
+
+dat:World_of_Tanks pro:genre wd:Q862490 ;
+	pro:platforms wd:Q1406 , wd:Q94 ;
+	pro:genre wd:Q270948 .
+
+dat:Doom_II pro:genre wd:Q270948 .
+
+dat:SimCity_2000 a pro:Game ;
+	pro:wikidata wd:Q1767176 ;
+	rdfs:label "SimCity 2000"@en ;
+	pro:genre wd:Q588289 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Simcity2000%20advance%20cartridge%20by%20zeartul.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q220317 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:SimCity_2000 ;
+	pro:publisher wd:Q173941 , wd:Q220317 ;
+	pro:platforms wd:Q10677 , wd:Q14116 , wd:Q21207 , wd:Q41357 , wd:Q47604 , wd:Q100047 , wd:Q13522376 , wd:Q170434 , wd:Q183259 , wd:Q184839 , wd:Q188642 , wd:Q200912 , wd:Q471094 .
+
+dat:Doom_II pro:genre wd:Q107542272 .
+
+dat:Bosconian a pro:Game ;
+	pro:wikidata wd:Q2294890 ;
+	rdfs:label "Bosconian"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Bosconian%2003.png> ;
+	pro:platforms wd:Q853547 ;
+	pro:dev wd:Q309996 ;
+	pro:publisher wd:Q309996 ;
+	pro:intern dat:Bosconian .
+
+dat:Super_Pac-Man a pro:Game ;
+	pro:wikidata wd:Q2366720 ;
+	rdfs:label "Super Pac-Man"@en ;
+	pro:genre wd:Q13717398 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Super%20Pac-Man%20-%20Bally%20Midway%20Namco%20arcade%20cabinet.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q309996 ;
+	pro:publisher wd:Q309996 ;
+	pro:intern dat:Super_Pac-Man ;
+	pro:platforms wd:Q10677 , wd:Q99775 , wd:Q170434 , wd:Q192851 , wd:Q193828 , wd:Q203992 .
+
+dat:Bosconian pro:platforms wd:Q478829 , wd:Q23882 .
+
+dat:Time_Crisis a pro:Game ;
+	pro:wikidata wd:Q2006613 ;
+	rdfs:label "Time Crisis"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Time%20crisis%20P170312%2011.30%2001.jpg> ;
+	pro:platforms wd:Q10677 ;
+	pro:dev wd:Q309996 ;
+	pro:publisher wd:Q309996 ;
+	pro:intern dat:Time_Crisis .
+
+dat:Bosconian pro:platforms wd:Q99775 .
+
+dat:Time_Crisis pro:platforms wd:Q192851 .
+
+dat:Tekken_3 a pro:Game ;
+	pro:wikidata wd:Q1062106 ;
+	rdfs:label "Tekken 3"@en ;
+	pro:genre wd:Q846224 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20M%C3%A9canique%20204.JPG> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q309996 ;
+	pro:publisher wd:Q309996 ;
+	pro:intern dat:Tekken_3 ;
+	pro:platforms wd:Q10677 .
+
+dat:Galaxian a pro:Game ;
+	pro:wikidata wd:Q1192514 ;
+	rdfs:label "Galaxian"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Midway%20%28USA%29%20Galaxian%20arcade%20machine.jpg> ;
+	pro:platforms wd:Q853547 ;
+	pro:dev wd:Q309996 ;
+	pro:publisher wd:Q309996 ;
+	pro:intern dat:Galaxian ;
+	pro:platforms wd:Q918232 , wd:Q1046862 , wd:Q23882 , wd:Q99775 , wd:Q135321 , wd:Q170434 , wd:Q172742 , wd:Q193321 , wd:Q203992 , wd:Q206261 , wd:Q743222 .
+
+dat:Death_Race a pro:Game ;
+	pro:wikidata wd:Q840560 ;
+	rdfs:label "Death Race"@en ;
+	pro:genre wd:Q27670585 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20M%C3%A9canique%20221.JPG> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q636926 ;
+	pro:publisher wd:Q636926 ;
+	pro:intern dat:Death_Race .
+
+dat:10-Yard_Fight a pro:Game ;
+	pro:wikidata wd:Q2669580 ;
+	rdfs:label "10-Yard Fight"@en ;
+	pro:genre wd:Q63915391 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/10-Yard%20Fight.jpg> ;
+	pro:platforms wd:Q200912 ;
+	pro:dev wd:Q617752 ;
+	pro:publisher wd:Q1054844 ;
+	pro:intern dat:10-Yard_Fight ;
+	pro:platforms wd:Q853547 .
+
+dat:Death_Race pro:genre wd:Q860750 , wd:Q2070892 .
+
+dat:Galaga a pro:Game ;
+	pro:wikidata wd:Q1043534 ;
+	rdfs:label "Galaga"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Galaga.jpg> ;
+	pro:platforms wd:Q753600 ;
+	pro:dev wd:Q309996 ;
+	pro:publisher wd:Q149947 ;
+	pro:intern dat:Galaga ;
+	pro:publisher wd:Q309996 ;
+	pro:platforms wd:Q853547 , wd:Q1136956 , wd:Q3870048 , wd:Q172742 .
+
+dat:Donkey_Kong pro:dev wd:Q282090 .
+
+dat:Pole_Position a pro:Game ;
+	pro:wikidata wd:Q1337036 ;
+	rdfs:label "Pole Position"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20M%C3%A9canique%20029.JPG> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q309996 ;
+	pro:publisher wd:Q309996 ;
+	pro:intern dat:Pole_Position ;
+	pro:platforms wd:Q170434 , wd:Q206261 , wd:Q743222 , wd:Q767631 , wd:Q23882 , wd:Q48493 .
+
+dat:Pac-Man a pro:Game ;
+	pro:wikidata wd:Q173626 ;
+	rdfs:label "Pac-Man"@en ;
+	pro:genre wd:Q13717398 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Original%20PacMan.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q309996 ;
+	pro:publisher wd:Q149947 ;
+	pro:intern dat:Pac-Man ;
+	pro:publisher wd:Q309996 ;
+	pro:platforms wd:Q1406 , wd:Q23882 , wd:Q94 , wd:Q48263 , wd:Q48493 , wd:Q99775 , wd:Q100047 , wd:Q135321 , wd:Q170434 , wd:Q172742 , wd:Q183259 , wd:Q188642 , wd:Q206261 , wd:Q4885200 , wd:Q743222 , wd:Q751719 , wd:Q853547 , wd:Q918232 .
+
+dat:Pokémon_FireRed_and_LeafGreen a pro:Game ;
+	pro:wikidata wd:Q609063 ;
+	rdfs:label "Pokémon FireRed and LeafGreen"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pokemon%20FireRed.svg> ;
+	pro:platforms wd:Q188642 ;
+	pro:dev wd:Q782028 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Pokémon_FireRed_and_LeafGreen ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pokemon%20LeafGreen.svg> .
+
+dat:Rumble_Fighter a pro:Game ;
+	pro:wikidata wd:Q2175595 ;
+	rdfs:label "Rumble Fighter"@en ;
+	pro:genre wd:Q846224 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Rumble%20Fighter%20Logo.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q488510 ;
+	pro:publisher wd:Q7072538 ;
+	pro:intern dat:Rumble_Fighter .
+
+dat:Paradroid a pro:Game ;
+	pro:wikidata wd:Q1424444 ;
+	rdfs:label "Paradroid"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Screenshot%20Paradroid%20GNU.JPG> ;
+	pro:platforms wd:Q41357 ;
+	pro:dev wd:Q740559 ;
+	pro:publisher wd:Q634677 ;
+	pro:intern dat:Paradroid ;
+	pro:platforms wd:Q48493 , wd:Q99775 , wd:Q100047 , wd:Q627302 .
+
+dat:Dofus a pro:Game ;
+	pro:wikidata wd:Q1139866 ;
+	rdfs:label "Dofus"@en ;
+	pro:genre wd:Q132311 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Dofus%20booth%20at%20GamesCom%20%283840123521%29.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q556308 ;
+	pro:publisher wd:Q556308 ;
+	pro:intern dat:Dofus ;
+	pro:platforms wd:Q1406 , wd:Q14116 , wd:Q43627 .
+
+dat:Gotcha a pro:Game ;
+	pro:wikidata wd:Q4039627 ;
+	rdfs:label "Gotcha"@en ;
+	pro:genre wd:Q13717398 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Vp4a%20front.png> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q207922 ;
+	pro:publisher wd:Q207922 ;
+	pro:intern dat:Gotcha .
+
+dat:The_Typing_of_the_Dead a pro:Game ;
+	pro:wikidata wd:Q3141916 ;
+	rdfs:label "The Typing of the Dead"@en ;
+	pro:genre wd:Q343568 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Typingofthedead.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q339565 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:The_Typing_of_the_Dead ;
+	pro:platforms wd:Q10680 , wd:Q48493 .
+
+dat:OutRunners a pro:Game ;
+	pro:wikidata wd:Q2599190 ;
+	rdfs:label "OutRunners"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/2007TaipeiITMonth%20IBM%20Sega%20OutRunners.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q339565 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:OutRunners .
+
+dat:The_Typing_of_the_Dead pro:platforms wd:Q184198 .
+
+dat:Viva_Piñata a pro:Game ;
+	pro:wikidata wd:Q913218 ;
+	rdfs:label "Viva Piñata"@en ;
+	pro:genre wd:Q1199309 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Viva%20World%27s%20Largest%20Pinata.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q642707 ;
+	pro:publisher wd:Q73801 ;
+	pro:intern dat:Viva_Piñata ;
+	pro:platforms wd:Q48263 .
+
+dat:OutRunners pro:platforms wd:Q10676 .
+
+dat:Tomb_Raider_Chronicles a pro:Game ;
+	pro:wikidata wd:Q642359 ;
+	rdfs:label "Tomb Raider Chronicles"@en ;
+	pro:genre wd:Q343568 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Tomb%20Raider%20-%20Chronicles.svg> ;
+	pro:platforms wd:Q13522376 ;
+	pro:dev wd:Q869104 ;
+	pro:publisher wd:Q679933 ;
+	pro:intern dat:Tomb_Raider_Chronicles ;
+	pro:publisher wd:Q10902322 ;
+	pro:platforms wd:Q184198 , wd:Q1406 , wd:Q10677 .
+
+dat:10-Yard_Fight pro:platforms wd:Q172742 , wd:Q10677 .
+
+dat:Gears_of_War a pro:Game ;
+	pro:wikidata wd:Q636219 ;
+	rdfs:label "Gears of War"@en ;
+	pro:genre wd:Q380266 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Gears%20of%20War%20graffiti.jpg> ;
+	pro:platforms wd:Q13361286 ;
+	pro:dev wd:Q739711 ;
+	pro:publisher wd:Q73801 ;
+	pro:intern dat:Gears_of_War ;
+	pro:platforms wd:Q1406 , wd:Q48263 .
+
+dat:Postal_2 a pro:Game ;
+	pro:wikidata wd:Q1974968 ;
+	rdfs:label "Postal 2"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Postal%202%20E3%202003.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q498812 ;
+	pro:publisher wd:Q417230 ;
+	pro:intern dat:Postal_2 ;
+	pro:platforms wd:Q1406 , wd:Q14116 ;
+	pro:publisher wd:Q97461153 .
+
+dat:Unreal_Tournament a pro:Game ;
+	pro:wikidata wd:Q627877 ;
+	rdfs:label "Unreal Tournament"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Unreal%20Tournament%20PS2.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q739711 ;
+	pro:publisher wd:Q930354 ;
+	pro:intern dat:Unreal_Tournament ;
+	pro:platforms wd:Q1406 , wd:Q10680 , wd:Q14116 , wd:Q43627 ;
+	pro:genre wd:Q54323360 ;
+	pro:platforms wd:Q13522376 , wd:Q184198 .
+
+dat:Doom pro:publisher wd:Q930354 , wd:Q1403157 , wd:Q1408498 .
+
+dat:Killzone a pro:Game ;
+	pro:wikidata wd:Q1129775 ;
+	rdfs:label "Killzone"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/KILLZONE.svg> ;
+	pro:platforms wd:Q10683 ;
+	pro:dev wd:Q337910 ;
+	pro:publisher wd:Q18594 ;
+	pro:intern dat:Killzone ;
+	pro:platforms wd:Q10680 .
+
+dat:Pump_It_Up a pro:Game ;
+	pro:wikidata wd:Q1322927 ;
+	rdfs:label "Pump It Up"@en ;
+	pro:genre wd:Q584105 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pump%20it%20up%20cosplay%201.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q489566 ;
+	pro:publisher wd:Q489566 ;
+	pro:intern dat:Pump_It_Up .
+
+dat:The_Typing_of_the_Dead pro:genre wd:Q1224999 .
+
+dat:Mystery_House a pro:Game ;
+	pro:wikidata wd:Q1751498 ;
+	rdfs:label "Mystery House"@en ;
+	pro:genre wd:Q23916 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mystery%20House%20-%20Apple%20II%20render%20emulation%20-%202.png> ;
+	pro:platforms wd:Q48493 ;
+	pro:dev wd:Q494614 ;
+	pro:publisher wd:Q494614 ;
+	pro:intern dat:Mystery_House ;
+	pro:publisher wd:Q4049462 .
+
+dat:Metal_Hawk a pro:Game ;
+	pro:wikidata wd:Q6822648 ;
+	rdfs:label "Metal Hawk"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/METAL%20HAWK.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q309996 ;
+	pro:publisher wd:Q309996 ;
+	pro:intern dat:Metal_Hawk .
+
+dat:Maelstrom a pro:Game ;
+	pro:wikidata wd:Q1883608 ;
+	rdfs:label "Maelstrom"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Maelstrom%20screenshot.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q459403 ;
+	pro:publisher wd:Q459403 ;
+	pro:intern dat:Maelstrom ;
+	pro:platforms wd:Q1406 , wd:Q62563 .
+
+dat:Mystery_House pro:platforms wd:Q3017175 .
+
+dat:Maelstrom pro:platforms wd:Q13522376 .
+
+dat:Hearthstone a pro:Game ;
+	pro:wikidata wd:Q8262784 ;
+	rdfs:label "Hearthstone"@en ;
+	pro:genre wd:Q48997688 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pyrkon%202018%20Heartstone%20Cosplay.jpg> ;
+	pro:platforms wd:Q64350339 ;
+	pro:dev wd:Q178824 ;
+	pro:publisher wd:Q178824 ;
+	pro:intern dat:Hearthstone ;
+	pro:platforms wd:Q1406 , wd:Q14116 , wd:Q94 , wd:Q48493 .
+
+dat:LittleBigPlanet a pro:Game ;
+	pro:wikidata wd:Q6579517 ;
+	rdfs:label "LittleBigPlanet"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/SonyFair2008%20Day1%20PS3%20LittleBIGPlanet.jpg> ;
+	pro:platforms wd:Q10683 ;
+	pro:dev wd:Q651140 ;
+	pro:publisher wd:Q18594 ;
+	pro:intern dat:LittleBigPlanet .
+
+dat:FIFA_Soccer_Manager a pro:Game ;
+	pro:wikidata wd:Q3285805 ;
+	rdfs:label "FIFA Soccer Manager"@en ;
+	pro:genre wd:Q1478420 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/FIFA%20Soccer%20Manager%20logo.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q869106 ;
+	pro:publisher wd:Q869106 ;
+	pro:intern dat:FIFA_Soccer_Manager .
+
+dat:LittleBigPlanet pro:genre wd:Q828322 , wd:Q107542272 .
+
+dat:EVE_Online a pro:Game ;
+	pro:wikidata wd:Q336177 ;
+	rdfs:label "EVE Online"@en ;
+	pro:genre wd:Q175173 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/EVE%20Online%20-%20Caldari%20Freighters.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q1023055 ;
+	pro:publisher wd:Q207922 ;
+	pro:intern dat:EVE_Online ;
+	pro:publisher wd:Q1023055 ;
+	pro:platforms wd:Q1406 ;
+	pro:publisher wd:Q1756332 ;
+	pro:platforms wd:Q14116 ;
+	pro:genre wd:Q468478 , wd:Q744038 .
+
+dat:Guitar_Hero_World_Tour a pro:Game ;
+	pro:wikidata wd:Q1759208 ;
+	rdfs:label "Guitar Hero World Tour"@en ;
+	pro:genre wd:Q2632782 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Guitar%20Hero%20World%20Tour%20Logo.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q970264 ;
+	pro:publisher wd:Q200491 ;
+	pro:intern dat:Guitar_Hero_World_Tour ;
+	pro:platforms wd:Q8079 , wd:Q10683 , wd:Q10680 , wd:Q14116 , wd:Q48263 .
+
+dat:EVE_Online pro:genre wd:Q61507686 , wd:Q1892535 , wd:Q107542373 , wd:Q862490 .
+
+dat:Demon_Attack a pro:Game ;
+	pro:wikidata wd:Q1186437 ;
+	rdfs:label "Demon Attack"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/DemonAttack.jpg> ;
+	pro:platforms wd:Q7185533 ;
+	pro:dev wd:Q453802 ;
+	pro:publisher wd:Q453802 ;
+	pro:intern dat:Demon_Attack ;
+	pro:genre wd:Q270948 ;
+	pro:platforms wd:Q99775 , wd:Q206261 , wd:Q249075 , wd:Q454390 , wd:Q576932 , wd:Q610305 , wd:Q918232 , wd:Q1061441 , wd:Q1411846 , wd:Q1419081 .
+
+dat:Heroes_of_the_Storm a pro:Game ;
+	pro:wikidata wd:Q15139655 ;
+	rdfs:label "Heroes of the Storm"@en ;
+	pro:genre wd:Q107542272 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Heroes%20of%20the%20Storm%20%2820138737788%29.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q178824 ;
+	pro:publisher wd:Q178824 ;
+	pro:intern dat:Heroes_of_the_Storm ;
+	pro:platforms wd:Q1406 , wd:Q14116 ;
+	pro:genre wd:Q270948 , wd:Q1189206 , wd:Q208189 , wd:Q21192427 .
+
+dat:Far_Cry_2 a pro:Game ;
+	pro:wikidata wd:Q176336 ;
+	rdfs:label "Far Cry 2"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Far%20Cry%202%20girl%20on%20Igromir%202008%20%285%29.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q903621 ;
+	pro:publisher wd:Q188273 ;
+	pro:intern dat:Far_Cry_2 ;
+	pro:platforms wd:Q10683 .
+
+dat:Blitzkrieg_3 a pro:Game ;
+	pro:wikidata wd:Q15933706 ;
+	rdfs:label "Blitzkrieg 3"@en ;
+	pro:genre wd:Q208189 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Blitzkrieg3%20logo%20en.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q185613 ;
+	pro:publisher wd:Q185613 ;
+	pro:intern dat:Blitzkrieg_3 ;
+	pro:platforms wd:Q14116 .
+
+dat:Persona_3 a pro:Game ;
+	pro:wikidata wd:Q910889 ;
+	rdfs:label "Persona 3"@en ;
+	pro:genre wd:Q85422949 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Persona%203%20Logo.svg> ;
+	pro:platforms wd:Q10683 ;
+	pro:dev wd:Q780528 ;
+	pro:publisher wd:Q845047 ;
+	pro:intern dat:Persona_3 ;
+	pro:platforms wd:Q10680 ;
+	pro:genre wd:Q744038 ;
+	pro:platforms wd:Q170325 .
+
+dat:Galaga pro:platforms wd:Q1406 , wd:Q94 , wd:Q48493 , wd:Q99775 , wd:Q100047 , wd:Q135321 .
+
+dat:Moon_Patrol a pro:Game ;
+	pro:wikidata wd:Q1665781 ;
+	rdfs:label "Moon Patrol"@en ;
+	pro:genre wd:Q2070892 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20M%C3%A9canique%20017.JPG> ;
+	pro:platforms wd:Q627302 ;
+	pro:dev wd:Q617752 ;
+	pro:publisher wd:Q1403157 ;
+	pro:intern dat:Moon_Patrol ;
+	pro:platforms wd:Q743222 , wd:Q853547 , wd:Q23882 , wd:Q99775 , wd:Q192851 , wd:Q206261 .
+
+dat:R-Type pro:dev wd:Q617752 .
+
+dat:The_House_of_the_Dead a pro:Game ;
+	pro:wikidata wd:Q6113095 ;
+	rdfs:label "The House of the Dead"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Typingofthedead.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q339565 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:The_House_of_the_Dead ;
+	pro:platforms wd:Q10677 .
+
+dat:Doom pro:dev wd:Q1058704 .
+
+dat:Age_of_Empires a pro:Game ;
+	pro:wikidata wd:Q220767 ;
+	rdfs:label "Age of Empires"@en ;
+	pro:genre wd:Q208189 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Age%20of%20Empires%20franchise%20logo.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q308913 ;
+	pro:publisher wd:Q73801 ;
+	pro:intern dat:Age_of_Empires ;
+	pro:platforms wd:Q13522376 .
+
+dat:Crisis_Zone a pro:Game ;
+	pro:wikidata wd:Q1041461 ;
+	rdfs:label "Crisis Zone"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Crisiszone.JPG> ;
+	pro:platforms wd:Q10680 ;
+	pro:dev wd:Q309996 ;
+	pro:publisher wd:Q1194689 ;
+	pro:intern dat:Crisis_Zone .
+
+dat:MotoGP a pro:Game ;
+	pro:wikidata wd:Q3866247 ;
+	rdfs:label "MotoGP"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Moto%20Gp%20logo.svg> ;
+	pro:platforms wd:Q10680 ;
+	pro:dev wd:Q309996 ;
+	pro:publisher wd:Q806259 ;
+	pro:intern dat:MotoGP .
+
+dat:SimCity_2000 pro:publisher wd:Q8075428 , wd:Q637178 .
+
+dat:Darius a pro:Game ;
+	pro:wikidata wd:Q374820 ;
+	rdfs:label "Darius"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/DARIUS.jpg> ;
+	pro:platforms wd:Q23882 ;
+	pro:dev wd:Q1054844 ;
+	pro:publisher wd:Q1054844 ;
+	pro:intern dat:Darius ;
+	pro:platforms wd:Q48493 , wd:Q100047 , wd:Q186437 , wd:Q188642 , wd:Q627302 , wd:Q1057377 .
+
+dat:Just_Dance_2 a pro:Game ;
+	pro:wikidata wd:Q732438 ;
+	rdfs:label "Just Dance 2"@en ;
+	pro:genre wd:Q584105 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Just%20Dance%202%20at%20Igromir%202010%20%285149165902%29.jpg> ;
+	pro:platforms wd:Q8079 ;
+	pro:dev wd:Q1041320 ;
+	pro:publisher wd:Q188273 ;
+	pro:intern dat:Just_Dance_2 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Comic-Con%202010%20-%20a%20giant%20thing%20wants%20to%20Just%20Dance%202%20%284875051816%29.jpg> ;
+	pro:genre wd:Q2187138 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Just%20Dance%20Wondercon%202010.jpg> .
+
+dat:The_Whispered_World a pro:Game ;
+	pro:wikidata wd:Q1815902 ;
+	rdfs:label "The Whispered World"@en ;
+	pro:genre wd:Q23916 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Whispered%20World%20screenshot%20006.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q1157042 ;
+	pro:publisher wd:Q553658 ;
+	pro:intern dat:The_Whispered_World ;
+	pro:platforms wd:Q1406 , wd:Q14116 , wd:Q48493 ;
+	pro:genre wd:Q2762504 .
+
+dat:Just_Dance a pro:Game ;
+	pro:wikidata wd:Q1714101 ;
+	rdfs:label "Just Dance"@en ;
+	pro:genre wd:Q584105 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Just%20Dance%20logo.svg> ;
+	pro:platforms wd:Q8079 ;
+	pro:dev wd:Q1041320 ;
+	pro:publisher wd:Q188273 ;
+	pro:intern dat:Just_Dance ;
+	pro:genre wd:Q2187138 .
+
+dat:Blades_of_Exile a pro:Game ;
+	pro:wikidata wd:Q72119699 ;
+	rdfs:label "Blades of Exile"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/BOEcombat1.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q744761 ;
+	pro:publisher wd:Q744761 ;
+	pro:intern dat:Blades_of_Exile ;
+	pro:platforms wd:Q14116 .
+
+dat:Just_Dance_3 a pro:Game ;
+	pro:wikidata wd:Q776131 ;
+	rdfs:label "Just Dance 3"@en ;
+	pro:genre wd:Q2187138 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Just%20Dance%20Wondercon%202010.jpg> ;
+	pro:platforms wd:Q8079 ;
+	pro:dev wd:Q1041320 ;
+	pro:publisher wd:Q188273 ;
+	pro:intern dat:Just_Dance_3 ;
+	pro:platforms wd:Q10683 , wd:Q48263 ;
+	pro:genre wd:Q584105 .
+
+dat:Choplifter a pro:Game ;
+	pro:wikidata wd:Q1076255 ;
+	rdfs:label "Choplifter"@en ;
+	pro:genre wd:Q270948 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Commodore%20Educator64%20open%20choplifter.jpg> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q1159075 ;
+	pro:publisher wd:Q995863 ;
+	pro:intern dat:Choplifter ;
+	pro:platforms wd:Q172742 , wd:Q209868 , wd:Q743222 , wd:Q753600 , wd:Q853547 , wd:Q918232 , wd:Q1046862 , wd:Q1136956 .
+
+dat:drummania a pro:Game ;
+	pro:wikidata wd:Q1062657 ;
+	rdfs:label "drummania"@en ;
+	pro:genre wd:Q584105 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Gfv3anddmv3%20.jpg> ;
+	pro:platforms wd:Q10680 ;
+	pro:dev wd:Q816353 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:drummania .
+
+dat:EverQuest_Next a pro:Game ;
+	pro:wikidata wd:Q4038383 ;
+	rdfs:label "EverQuest Next"@en ;
+	pro:genre wd:Q175173 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/EverQuest%20Next%20logo.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q959672 ;
+	pro:publisher wd:Q959672 ;
+	pro:intern dat:EverQuest_Next .
+
+dat:Guitar_Freaks a pro:Game ;
+	pro:wikidata wd:Q1142106 ;
+	rdfs:label "Guitar Freaks"@en ;
+	pro:genre wd:Q2632782 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/GuitarFreaks%20V7%2020170726%20125150.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q816353 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Guitar_Freaks .
+
+dat:EverQuest_Next pro:platforms wd:Q5014725 .
+
+dat:Transport_Tycoon a pro:Game ;
+	pro:wikidata wd:Q651591 ;
+	rdfs:label "Transport Tycoon"@en ;
+	pro:genre wd:Q1198141 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Openttd%20transport%20tycoon-terabass.jpg> ;
+	pro:platforms wd:Q170434 ;
+	pro:dev wd:Q454738 ;
+	pro:publisher wd:Q652421 ;
+	pro:intern dat:Transport_Tycoon ;
+	pro:platforms wd:Q10677 , wd:Q94 , wd:Q43627 , wd:Q48493 .
+
+dat:Far_Cry_3 a pro:Game ;
+	pro:wikidata wd:Q796529 ;
+	rdfs:label "Far Cry 3"@en ;
+	pro:genre wd:Q343568 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Far%20Cry%203%20at%20Igromir%202012.jpg> ;
+	pro:platforms wd:Q48263 ;
+	pro:dev wd:Q846884 ;
+	pro:publisher wd:Q188273 ;
+	pro:intern dat:Far_Cry_3 ;
+	pro:genre wd:Q185029 ;
+	pro:platforms wd:Q1406 , wd:Q10683 .
+
+dat:Fortnite_Battle_Royale a pro:Game ;
+	pro:wikidata wd:Q50822580 ;
+	rdfs:label "Fortnite Battle Royale"@en ;
+	pro:genre wd:Q30607131 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/FortniteLogo.svg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q739711 ;
+	pro:publisher wd:Q739711 ;
+	pro:intern dat:Fortnite_Battle_Royale ;
+	pro:platforms wd:Q14116 , wd:Q94 , wd:Q48493 , wd:Q13361286 , wd:Q5014725 , wd:Q63184502 , wd:Q19610114 .
+
+dat:EVE_Online pro:dev wd:Q1756332 .
+
+dat:World_of_Goo a pro:Game ;
+	pro:wikidata wd:Q637312 ;
+	rdfs:label "World of Goo"@en ;
+	pro:genre wd:Q11756212 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/World%20of%20Goo%20Editor.png> ;
+	pro:platforms wd:Q19610114 ;
+	pro:dev wd:Q682039 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:World_of_Goo ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/World%20of%20Goo%20Gameplay.png> ;
+	pro:platforms wd:Q388 , wd:Q1406 , wd:Q8079 , wd:Q14116 , wd:Q94 , wd:Q48493 ;
+	pro:genre wd:Q54767 ;
+	pro:platforms wd:Q879989 .
+
+dat:Far_Cry_2 pro:platforms wd:Q48263 .
+
+dat:Super_Sprint a pro:Game ;
+	pro:wikidata wd:Q1141199 ;
+	rdfs:label "Super Sprint"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20M%C3%A9canique%20185.JPG> ;
+	pro:platforms wd:Q627302 ;
+	pro:dev wd:Q1061580 ;
+	pro:publisher wd:Q1061580 ;
+	pro:intern dat:Super_Sprint ;
+	pro:platforms wd:Q23882 .
+
+dat:Pokémon_Black_and_White a pro:Game ;
+	pro:wikidata wd:Q816034 ;
+	rdfs:label "Pokémon Black and White"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pok%C3%A9mon%20Black%20Version%20Translucent%20Cartridge%20Demonstration.jpg> ;
+	pro:platforms wd:Q170323 ;
+	pro:dev wd:Q782028 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Pokémon_Black_and_White ;
+	pro:platforms wd:Q170325 .
+
+dat:Super_Sprint pro:platforms wd:Q99775 , wd:Q172742 , wd:Q478829 .
+
+dat:Gauntlet a pro:Game ;
+	pro:wikidata wd:Q734758 ;
+	rdfs:label "Gauntlet"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/GAUNTLET.jpg> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q1061580 ;
+	pro:publisher wd:Q1930918 ;
+	pro:intern dat:Gauntlet ;
+	pro:platforms wd:Q13522376 , wd:Q132020 , wd:Q170323 , wd:Q170434 , wd:Q172742 , wd:Q192851 , wd:Q249075 , wd:Q478829 , wd:Q627302 , wd:Q853547 .
+
+dat:Pokémon_Ruby_and_Sapphire a pro:Game ;
+	pro:wikidata wd:Q721822 ;
+	rdfs:label "Pokémon Ruby and Sapphire"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pokemon%20Ruby%20Sapphire.svg> ;
+	pro:platforms wd:Q188642 ;
+	pro:dev wd:Q782028 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Pokémon_Ruby_and_Sapphire .
+
+dat:Gauntlet pro:platforms wd:Q1282269 , wd:Q23882 , wd:Q43627 .
+
+dat:Pokémon_Platinum a pro:Game ;
+	pro:wikidata wd:Q1154227 ;
+	rdfs:label "Pokémon Platinum"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pokemon%20Platinum%20Version%20logo.png> ;
+	pro:platforms wd:Q170323 ;
+	pro:dev wd:Q782028 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Pokémon_Platinum .
+
+dat:The_Idolmaster_Cinderella_Girls a pro:Game ;
+	pro:wikidata wd:Q115508 ;
+	rdfs:label "The Idolmaster Cinderella Girls"@en ;
+	pro:genre wd:Q584105 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Idolmaster%20Cinderella%20Girls%20stage%20outfits%2C%20C3HK%2020150215a.jpg> ;
+	pro:platforms wd:Q94 ;
+	pro:dev wd:Q1194689 ;
+	pro:publisher wd:Q11320256 ;
+	pro:intern dat:The_Idolmaster_Cinderella_Girls ;
+	pro:platforms wd:Q48493 .
+
+dat:Tropico_3 a pro:Game ;
+	pro:wikidata wd:Q1316866 ;
+	rdfs:label "Tropico 3"@en ;
+	pro:genre wd:Q1198141 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Tropico%203%20logo.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q787163 ;
+	pro:publisher wd:Q26188 ;
+	pro:intern dat:Tropico_3 ;
+	pro:platforms wd:Q14116 , wd:Q48263 , wd:Q48493 .
+
+dat:Puzzle_Bobble a pro:Game ;
+	pro:wikidata wd:Q1197521 ;
+	rdfs:label "Puzzle Bobble"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Frozen-bubble.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q1054844 ;
+	pro:publisher wd:Q1054844 ;
+	pro:intern dat:Puzzle_Bobble ;
+	pro:platforms wd:Q48493 , wd:Q183259 , wd:Q229429 , wd:Q336434 , wd:Q751719 , wd:Q1054350 .
+
+dat:FIFA_99 a pro:Game ;
+	pro:wikidata wd:Q2420155 ;
+	rdfs:label "FIFA 99"@en ;
+	pro:genre wd:Q1478420 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/FIFA%2099%20logo.jpg> ;
+	pro:platforms wd:Q184839 ;
+	pro:dev wd:Q752317 ;
+	pro:publisher wd:Q869106 ;
+	pro:intern dat:FIFA_99 ;
+	pro:platforms wd:Q1406 , wd:Q10676 , wd:Q10677 , wd:Q16338 .
+
+dat:Anarchy_Online a pro:Game ;
+	pro:wikidata wd:Q486410 ;
+	rdfs:label "Anarchy Online"@en ;
+	pro:genre wd:Q24925 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Anarchy%20Online%20Land%20Control%20Area.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q918638 ;
+	pro:publisher wd:Q918638 ;
+	pro:intern dat:Anarchy_Online ;
+	pro:genre wd:Q27670585 .
+
+dat:Stationfall a pro:Game ;
+	pro:wikidata wd:Q7604356 ;
+	rdfs:label "Stationfall"@en ;
+	pro:genre wd:Q1143118 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Screenshot%20Stationfall%20%28Infocom%2C%201986%29.jpg> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q742561 ;
+	pro:publisher wd:Q742561 ;
+	pro:intern dat:Stationfall ;
+	pro:platforms wd:Q100047 , wd:Q13522376 , wd:Q170434 , wd:Q201652 ;
+	pro:genre wd:Q27670585 ;
+	pro:platforms wd:Q478829 .
+
+dat:Pokémon_Ruby a pro:Game ;
+	pro:wikidata wd:Q26903145 ;
+	rdfs:label "Pokémon Ruby"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pokemon%20Ruby%20Sapphire.svg> ;
+	pro:platforms wd:Q188642 ;
+	pro:dev wd:Q782028 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Pokémon_Ruby .
+
+dat:Pokémon_Sapphire a pro:Game ;
+	pro:wikidata wd:Q26903151 ;
+	rdfs:label "Pokémon Sapphire"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pokemon%20Ruby%20Sapphire.svg> ;
+	pro:platforms wd:Q188642 ;
+	pro:dev wd:Q782028 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Pokémon_Sapphire .
+
+dat:Angry_Birds_Magic a pro:Game ;
+	pro:wikidata wd:Q6959455 ;
+	rdfs:label "Angry Birds Magic"@en ;
+	pro:genre wd:Q15613992 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Angry%20Birds%20logo%202015.svg> ;
+	pro:platforms wd:Q241874 ;
+	pro:dev wd:Q870095 ;
+	pro:publisher wd:Q870095 ;
+	pro:intern dat:Angry_Birds_Magic ;
+	pro:genre wd:Q13698 ;
+	pro:platforms wd:Q483318 .
+
+dat:Far_Cry_3 pro:dev wd:Q769354 , wd:Q1466613 .
+
+dat:Syberia a pro:Game ;
+	pro:wikidata wd:Q580202 ;
+	rdfs:label "Syberia"@en ;
+	pro:genre wd:Q23916 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Syberia%2002%20-%20Oscar.jpg> ;
+	pro:platforms wd:Q132020 ;
+	pro:dev wd:Q1850424 ;
+	pro:publisher wd:Q1850424 ;
+	pro:intern dat:Syberia ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Syberia%2004%20-%20Valadil%C3%A8ne.jpg> ;
+	pro:platforms wd:Q19610114 , wd:Q1406 , wd:Q10683 , wd:Q10680 , wd:Q14116 , wd:Q94 , wd:Q48493 .
+
+dat:Tearaway_Unfolded a pro:Game ;
+	pro:wikidata wd:Q20899618 ;
+	rdfs:label "Tearaway Unfolded"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Tearaway%20at%20Gamescom%202013%20%289588344205%29.jpg> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q1317020 ;
+	pro:publisher wd:Q18594 ;
+	pro:intern dat:Tearaway_Unfolded .
+
+dat:Brink a pro:Game ;
+	pro:wikidata wd:Q615883 ;
+	rdfs:label "Brink"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Brink%20booth%20at%20PAX%20Prime%202010%20%284959212819%29.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q1889791 ;
+	pro:publisher wd:Q684425 ;
+	pro:intern dat:Brink ;
+	pro:platforms wd:Q10683 , wd:Q48263 ;
+	pro:genre wd:Q27670585 .
+
+dat:Project_CARS a pro:Game ;
+	pro:wikidata wd:Q2069428 ;
+	rdfs:label "Project CARS"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/ProjectCARS%20Official%20Logo.png> ;
+	pro:platforms wd:Q13361286 ;
+	pro:dev wd:Q1193145 ;
+	pro:publisher wd:Q1193145 ;
+	pro:intern dat:Project_CARS ;
+	pro:platforms wd:Q5014725 .
+
+dat:Cloud a pro:Game ;
+	pro:wikidata wd:Q113100 ;
+	rdfs:label "Cloud"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Cloud.svg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q710724 ;
+	pro:publisher wd:Q7866341 ;
+	pro:intern dat:Cloud .
+
+dat:Project_CARS pro:platforms wd:Q1406 .
+
+dat:Tapper a pro:Game ;
+	pro:wikidata wd:Q1669142 ;
+	rdfs:label "Tapper"@en ;
+	pro:genre wd:Q270948 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Tapper%20arcade%20cabinet%20-%20Bally%20Midway.jpg> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q1906072 ;
+	pro:publisher wd:Q149947 ;
+	pro:intern dat:Tapper ;
+	pro:platforms wd:Q170434 , wd:Q206261 , wd:Q478829 , wd:Q23882 .
+
+dat:Morita_Shogi_64 a pro:Game ;
+	pro:wikidata wd:Q3324129 ;
+	rdfs:label "Morita Shogi 64"@en ;
+	pro:genre wd:Q131436 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Morita%20Shogi%2064%2C%20Modem%20and%20led%20window.JPG> ;
+	pro:platforms wd:Q184839 ;
+	pro:dev wd:Q954877 ;
+	pro:publisher wd:Q954877 ;
+	pro:intern dat:Morita_Shogi_64 .
+
+dat:Homefront a pro:Game ;
+	pro:wikidata wd:Q349413 ;
+	rdfs:label "Homefront"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/E3%202010%20Homefront%20booth.jpg> ;
+	pro:platforms wd:Q744171 ;
+	pro:dev wd:Q1224739 ;
+	pro:publisher wd:Q580866 ;
+	pro:intern dat:Homefront ;
+	pro:publisher wd:Q2541040 .
+
+dat:Cossacks_3 a pro:Game ;
+	pro:wikidata wd:Q20538667 ;
+	rdfs:label "Cossacks 3"@en ;
+	pro:genre wd:Q208189 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Cossacks%203%20screenshot%205.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q1425861 ;
+	pro:publisher wd:Q1425861 ;
+	pro:intern dat:Cossacks_3 ;
+	pro:platforms wd:Q1406 .
+
+dat:Homefront pro:platforms wd:Q1406 , wd:Q10683 , wd:Q48263 .
+
+dat:Amerzone a pro:Game ;
+	pro:wikidata wd:Q740986 ;
+	rdfs:label "Amerzone"@en ;
+	pro:genre wd:Q33183362 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Amerzone%2001%20-%20Ventousier.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q1850424 ;
+	pro:publisher wd:Q568077 ;
+	pro:intern dat:Amerzone ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Amerzone%2002%20-%20Oiseau%20blanc.png> , <http://commons.wikimedia.org/wiki/Special:FilePath/Amerzone%2004%20-%20Mackowski.png> , <http://commons.wikimedia.org/wiki/Special:FilePath/Amerzone%2006%20-%20Y%C3%A9koumani.png> , <http://commons.wikimedia.org/wiki/Special:FilePath/Amerzone%2012%20-%20Gameplay.gif> , <http://commons.wikimedia.org/wiki/Special:FilePath/Amerzone%2013%20-%20Inventaire.png> , <http://commons.wikimedia.org/wiki/Special:FilePath/Amerzone%2014%20-%20Hydraflot.png> , <http://commons.wikimedia.org/wiki/Special:FilePath/Amerzone%2015%20-%20Ordinateur%20Hydraflot.png> ;
+	pro:platforms wd:Q10677 , wd:Q14116 , wd:Q48493 ;
+	pro:genre wd:Q23916 ;
+	pro:platforms wd:Q13522376 .
+
+dat:Metal_Gear_Solid_HD_Collection a pro:Game ;
+	pro:wikidata wd:Q1880634 ;
+	rdfs:label "Metal Gear Solid HD Collection"@en ;
+	pro:genre wd:Q343568 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Metal%20Gear%20Solid%20HD%20Collection%20Logo.png> ;
+	pro:platforms wd:Q188808 ;
+	pro:dev wd:Q1502293 ;
+	pro:publisher wd:Q45700 ;
+	pro:intern dat:Metal_Gear_Solid_HD_Collection ;
+	pro:platforms wd:Q27076301 , wd:Q10683 , wd:Q48263 .
+
+dat:Hollywood_Hijinx a pro:Game ;
+	pro:wikidata wd:Q13630627 ;
+	rdfs:label "Hollywood Hijinx"@en ;
+	pro:genre wd:Q1143118 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Screenshot%20Hollywood%20Hijinx%20%28Infocom%2C%201987%29.jpg> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q742561 ;
+	pro:publisher wd:Q742561 ;
+	pro:intern dat:Hollywood_Hijinx ;
+	pro:platforms wd:Q100047 , wd:Q13522376 , wd:Q170434 , wd:Q249075 , wd:Q454390 , wd:Q610305 , wd:Q627302 .
+
+dat:Ataxx a pro:Game ;
+	pro:wikidata wd:Q753850 ;
+	rdfs:label "Ataxx"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Ataxx.gif> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q1816614 ;
+	pro:publisher wd:Q1816614 ;
+	pro:intern dat:Ataxx .
+
+dat:Hollywood_Hijinx pro:platforms wd:Q3017175 .
+
+dat:Syberia_II a pro:Game ;
+	pro:wikidata wd:Q2088341 ;
+	rdfs:label "Syberia II"@en ;
+	pro:genre wd:Q23916 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Syberia%202%20logo.svg> ;
+	pro:platforms wd:Q19610114 ;
+	pro:dev wd:Q1850424 ;
+	pro:publisher wd:Q8042484 ;
+	pro:intern dat:Syberia_II ;
+	pro:platforms wd:Q1406 , wd:Q10683 , wd:Q10680 , wd:Q14116 , wd:Q94 , wd:Q48493 , wd:Q132020 .
+
+dat:Rugby_06 a pro:Game ;
+	pro:wikidata wd:Q7378147 ;
+	rdfs:label "Rugby 06"@en ;
+	pro:genre wd:Q868217 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Rugby%2006%20logo.png> ;
+	pro:platforms wd:Q132020 ;
+	pro:dev wd:Q752317 ;
+	pro:publisher wd:Q869106 ;
+	pro:intern dat:Rugby_06 ;
+	pro:platforms wd:Q10680 .
+
+dat:Borderlands_2 a pro:Game ;
+	pro:wikidata wd:Q893422 ;
+	rdfs:label "Borderlands 2"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Borderlands%202%20%289647608183%29.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q1046593 ;
+	pro:publisher wd:Q94937 ;
+	pro:intern dat:Borderlands_2 ;
+	pro:platforms wd:Q1406 , wd:Q10683 , wd:Q14116 , wd:Q94 , wd:Q48263 ;
+	pro:genre wd:Q1422746 , wd:Q85422949 , wd:Q85341917 ;
+	pro:platforms wd:Q188808 , wd:Q5014725 .
+
+dat:Sonic_Advance a pro:Game ;
+	pro:wikidata wd:Q2081510 ;
+	rdfs:label "Sonic Advance"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Sonic%20Advance%20Logo.webp> ;
+	pro:platforms wd:Q188642 ;
+	pro:dev wd:Q1140960 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Sonic_Advance ;
+	pro:platforms wd:Q336434 , wd:Q94 .
+
+dat:Trine_2 a pro:Game ;
+	pro:wikidata wd:Q2632229 ;
+	rdfs:label "Trine 2"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Trine%202%20-%20Belly%20of%20the%20Beast.jpg> ;
+	pro:platforms wd:Q170325 ;
+	pro:dev wd:Q2419591 ;
+	pro:publisher wd:Q780528 ;
+	pro:intern dat:Trine_2 ;
+	pro:platforms wd:Q5014725 ;
+	pro:genre wd:Q828322 ;
+	pro:platforms wd:Q388 , wd:Q1406 , wd:Q10683 , wd:Q14116 , wd:Q94 , wd:Q19610114 , wd:Q48263 , wd:Q56942 .
+
+dat:Just_Dance_2022 a pro:Game ;
+	pro:wikidata wd:Q99477498 ;
+	rdfs:label "Just Dance 2022"@en ;
+	pro:genre wd:Q2187138 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Just%20Dance%202022%20logo.png> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q1041320 ;
+	pro:publisher wd:Q188273 ;
+	pro:intern dat:Just_Dance_2022 ;
+	pro:platforms wd:Q63184502 , wd:Q98973368 ;
+	pro:genre wd:Q584105 ;
+	pro:platforms wd:Q13361286 , wd:Q19610114 .
+
+dat:Trine_2 pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Trine%202%20-%20Cloudy%20Isles%20Shaman.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Trine%202%20-%20Deadly%20Dustland%20Three%20Heroes.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Trine%202%20-%20Dwarven%20Caverns%20Lava.jpg> .
+
+dat:The_Longest_Journey a pro:Game ;
+	pro:wikidata wd:Q918194 ;
+	rdfs:label "The Longest Journey"@en ;
+	pro:genre wd:Q23916 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Longest%20Journey-Arcadia-Map.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q918638 ;
+	pro:publisher wd:Q188273 ;
+	pro:intern dat:The_Longest_Journey ;
+	pro:platforms wd:Q48493 ;
+	pro:genre wd:Q85422949 .
+
+dat:Pac-Man_Championship_Edition a pro:Game ;
+	pro:wikidata wd:Q3270488 ;
+	rdfs:label "Pac-Man Championship Edition"@en ;
+	pro:genre wd:Q13717398 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pacmanchampion2.JPG> ;
+	pro:platforms wd:Q94 ;
+	pro:dev wd:Q1194689 ;
+	pro:publisher wd:Q1194689 ;
+	pro:intern dat:Pac-Man_Championship_Edition .
+
+dat:Final_Fantasy_VII a pro:Game ;
+	pro:wikidata wd:Q214232 ;
+	rdfs:label "Final Fantasy VII"@en ;
+	pro:genre wd:Q107542272 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Final%20Fantasy%20VII%20wordmark.svg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q739552 ;
+	pro:publisher wd:Q207784 ;
+	pro:intern dat:Final_Fantasy_VII ;
+	pro:publisher wd:Q739552 ;
+	pro:platforms wd:Q10677 , wd:Q94 , wd:Q48493 ;
+	pro:genre wd:Q54323360 ;
+	pro:platforms wd:Q5014725 ;
+	pro:genre wd:Q744038 ;
+	pro:platforms wd:Q19610114 .
+
+dat:The_Last_of_Us_Part_II a pro:Game ;
+	pro:wikidata wd:Q27950674 ;
+	rdfs:label "The Last of Us Part II"@en ;
+	pro:genre wd:Q333967 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Last%20of%20Us%20Part%20II%20marketing%20-%20train.jpg> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q720871 ;
+	pro:publisher wd:Q18594 ;
+	pro:intern dat:The_Last_of_Us_Part_II ;
+	pro:genre wd:Q343568 , wd:Q270948 , wd:Q197949 , wd:Q858523 .
+
+dat:Rugby_06 pro:platforms wd:Q1406 .
+
+dat:Ico a pro:Game ;
+	pro:wikidata wd:Q1324448 ;
+	rdfs:label "Ico"@en ;
+	pro:genre wd:Q343568 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Ico-logo.jpg> ;
+	pro:platforms wd:Q10683 ;
+	pro:dev wd:Q932631 ;
+	pro:publisher wd:Q18594 ;
+	pro:intern dat:Ico ;
+	pro:platforms wd:Q10680 .
+
+dat:Star_Trek a pro:Game ;
+	pro:wikidata wd:Q3496992 ;
+	rdfs:label "Star Trek"@en ;
+	pro:genre wd:Q1892535 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/AZC-StarTrek.jpg> ;
+	pro:platforms wd:Q743222 ;
+	pro:dev wd:Q122741 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Star_Trek ;
+	pro:platforms wd:Q918232 , wd:Q1046862 .
+
+dat:Monaco_GP a pro:Game ;
+	pro:wikidata wd:Q3320087 ;
+	rdfs:label "Monaco GP"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20M%C3%A9canique%20207.JPG> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q122741 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Monaco_GP ;
+	pro:platforms wd:Q1136956 .
+
+dat:Star_Trek pro:platforms wd:Q99775 , wd:Q206261 .
+
+dat:Furmins a pro:Game ;
+	pro:wikidata wd:Q5509593 ;
+	rdfs:label "Furmins"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Furmins%20Cover%20Art.png> ;
+	pro:platforms wd:Q188808 ;
+	pro:dev wd:Q2572761 ;
+	pro:publisher wd:Q2572761 ;
+	pro:intern dat:Furmins ;
+	pro:genre wd:Q828322 ;
+	pro:platforms wd:Q10683 , wd:Q48493 .
+
+dat:Time_Crisis_4 a pro:Game ;
+	pro:wikidata wd:Q2741554 ;
+	rdfs:label "Time Crisis 4"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Time%20Crisis%204.jpg> ;
+	pro:platforms wd:Q10683 ;
+	pro:dev wd:Q2585499 ;
+	pro:publisher wd:Q1194689 ;
+	pro:intern dat:Time_Crisis_4 .
+
+dat:Borderlands_2 pro:dev wd:Q738135 .
+
+dat:N a pro:Game ;
+	pro:wikidata wd:Q1890066 ;
+	rdfs:label "N"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/N%20screenshot27.jpg> ;
+	pro:platforms wd:Q170323 ;
+	pro:dev wd:Q1925056 ;
+	pro:publisher wd:Q1925056 ;
+	pro:intern dat:N ;
+	pro:platforms wd:Q170325 ;
+	pro:genre wd:Q270948 , wd:Q828322 ;
+	pro:platforms wd:Q388 , wd:Q1406 , wd:Q14116 , wd:Q48263 .
+
+dat:Rebelstar a pro:Game ;
+	pro:wikidata wd:Q2671101 ;
+	rdfs:label "Rebelstar"@en ;
+	pro:genre wd:Q4375640 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/ZX%20Rebelstar%202.png> ;
+	pro:platforms wd:Q478829 ;
+	pro:dev wd:Q2578390 ;
+	pro:publisher wd:Q2736040 ;
+	pro:intern dat:Rebelstar ;
+	pro:platforms wd:Q23882 .
+
+dat:Trine_2 pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Trine%202%20-%20Searock%20Castle%20Octopus.jpg> .
+
+dat:Final_Fantasy_V a pro:Game ;
+	pro:wikidata wd:Q900305 ;
+	rdfs:label "Final Fantasy V"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Final%20Fantasy%20V%20wordmark.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q739552 ;
+	pro:publisher wd:Q739552 ;
+	pro:intern dat:Final_Fantasy_V ;
+	pro:platforms wd:Q10677 , wd:Q94 , wd:Q48493 , wd:Q170325 , wd:Q183259 , wd:Q188642 .
+
+dat:Pure_Pinball a pro:Game ;
+	pro:wikidata wd:Q7261119 ;
+	rdfs:label "Pure Pinball"@en ;
+	pro:genre wd:Q653928 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pure-Pinball-Steel-Ball-Magic-Big-Beach-Miami%20Prototype%201920-02.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q1756332 ;
+	pro:publisher wd:Q10556387 ;
+	pro:intern dat:Pure_Pinball .
+
+dat:Ballistics a pro:Game ;
+	pro:wikidata wd:Q2881319 ;
+	rdfs:label "Ballistics"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Ballistics%20Arcade%20-%20IAAPA.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q2062521 ;
+	pro:publisher wd:Q8044346 ;
+	pro:intern dat:Ballistics ;
+	pro:platforms wd:Q1406 .
+
+dat:Pure_Pinball pro:platforms wd:Q132020 .
+
+dat:Ballistics pro:platforms wd:Q192851 .
+
+dat:Pac-Man_Championship_Edition pro:platforms wd:Q48493 .
+
+dat:Final_Fantasy_X a pro:Game ;
+	pro:wikidata wd:Q223381 ;
+	rdfs:label "Final Fantasy X"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Final%20Fantasy%20X%20wordmark.png> ;
+	pro:platforms wd:Q188808 ;
+	pro:dev wd:Q739552 ;
+	pro:publisher wd:Q739552 ;
+	pro:intern dat:Final_Fantasy_X ;
+	pro:platforms wd:Q10683 , wd:Q10680 .
+
+dat:Gears_Tactics a pro:Game ;
+	pro:wikidata wd:Q78528783 ;
+	rdfs:label "Gears Tactics"@en ;
+	pro:genre wd:Q4375640 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/GearsTactics%20Cinematic%201920x1080.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q1889791 ;
+	pro:publisher wd:Q73801 ;
+	pro:intern dat:Gears_Tactics ;
+	pro:genre wd:Q2176159 ;
+	pro:platforms wd:Q13361286 , wd:Q98973368 .
+
+dat:Syberia_III a pro:Game ;
+	pro:wikidata wd:Q2508481 ;
+	rdfs:label "Syberia III"@en ;
+	pro:genre wd:Q23916 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Syberia3%20Logo.jpg> ;
+	pro:platforms wd:Q13361286 ;
+	pro:dev wd:Q1850424 ;
+	pro:publisher wd:Q2857799 ;
+	pro:intern dat:Syberia_III ;
+	pro:platforms wd:Q5014725 , wd:Q19610114 , wd:Q1406 , wd:Q14116 , wd:Q94 , wd:Q48493 .
+
+dat:Final_Fantasy_VI a pro:Game ;
+	pro:wikidata wd:Q535940 ;
+	rdfs:label "Final Fantasy VI"@en ;
+	pro:genre wd:Q104735362 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Final%20Fantasy%20VI%20wordmark.png> ;
+	pro:platforms wd:Q821067 ;
+	pro:dev wd:Q739552 ;
+	pro:publisher wd:Q739552 ;
+	pro:intern dat:Final_Fantasy_VI ;
+	pro:genre wd:Q744038 ;
+	pro:platforms wd:Q170325 , wd:Q183259 , wd:Q188642 , wd:Q1406 , wd:Q10677 , wd:Q94 , wd:Q48493 .
+
+dat:Final_Fantasy_VIII a pro:Game ;
+	pro:wikidata wd:Q245006 ;
+	rdfs:label "Final Fantasy VIII"@en ;
+	pro:genre wd:Q107542272 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Final%20Fantasy%20wordmark.svg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q739552 ;
+	pro:publisher wd:Q739552 ;
+	pro:intern dat:Final_Fantasy_VIII ;
+	pro:platforms wd:Q10677 , wd:Q94 , wd:Q48493 ;
+	pro:genre wd:Q85422949 , wd:Q744038 .
+
+dat:Rock_Band_2 a pro:Game ;
+	pro:wikidata wd:Q2569492 ;
+	rdfs:label "Rock Band 2"@en ;
+	pro:genre wd:Q2632782 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/RockBand2PAX.jpg> ;
+	pro:platforms wd:Q8079 ;
+	pro:dev wd:Q2607531 ;
+	pro:publisher wd:Q100530795 ;
+	pro:intern dat:Rock_Band_2 ;
+	pro:platforms wd:Q10683 , wd:Q10680 , wd:Q48263 .
+
+dat:Final_Fantasy_IV a pro:Game ;
+	pro:wikidata wd:Q911226 ;
+	rdfs:label "Final Fantasy IV"@en ;
+	pro:genre wd:Q104735362 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Final%20Fantasy%20IV%20wordmark.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q739552 ;
+	pro:publisher wd:Q739552 ;
+	pro:intern dat:Final_Fantasy_IV ;
+	pro:platforms wd:Q94 ;
+	pro:genre wd:Q744038 .
+
+<http://api.pa1007.dev/data/Sonic_&_All-Stars_Racing_Transformed> a pro:Game ;
+	pro:wikidata wd:Q2614466 ;
+	rdfs:label "Sonic & All-Stars Racing Transformed"@en ;
+	pro:genre wd:Q21192427 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/E3%20Expo%202012%20-%20Sega%20Sonic%20All-Stars%20Racing%20Transformed%20%287640968408%29.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q2602093 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern <http://api.pa1007.dev/data/Sonic_&_All-Stars_Racing_Transformed> ;
+	pro:platforms wd:Q10683 , wd:Q94 , wd:Q48263 , wd:Q48493 ;
+	pro:genre wd:Q860750 .
+
+dat:Bubble_Ghost a pro:Game ;
+	pro:wikidata wd:Q2927389 ;
+	rdfs:label "Bubble Ghost"@en ;
+	pro:genre wd:Q192851 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Bubble%20ghost%20st%20hall09.png> ;
+	pro:platforms wd:Q627302 ;
+	pro:dev wd:Q1782700 ;
+	pro:publisher wd:Q3046067 ;
+	pro:intern dat:Bubble_Ghost ;
+	pro:platforms wd:Q1282269 .
+
+dat:Mario_Kart_Arcade_GP_2 a pro:Game ;
+	pro:wikidata wd:Q9029138 ;
+	rdfs:label "Mario Kart Arcade GP 2"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mario-kart-arcade-gp2.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q1194689 ;
+	pro:publisher wd:Q1194689 ;
+	pro:intern dat:Mario_Kart_Arcade_GP_2 .
+
+dat:Final_Fantasy_XIV a pro:Game ;
+	pro:wikidata wd:Q868389 ;
+	rdfs:label "Final Fantasy XIV"@en ;
+	pro:genre wd:Q175173 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Final%20Fantasy%20XIV%20wordmark.png> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q207784 ;
+	pro:publisher wd:Q207784 ;
+	pro:intern dat:Final_Fantasy_XIV ;
+	pro:platforms wd:Q63184502 , wd:Q1406 , wd:Q14116 .
+
+dat:Bubble_Ghost pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Bubble%20ghost%20st%20hall05.png> ;
+	pro:platforms wd:Q99775 , wd:Q170434 .
+
+dat:Star_Wars_Battle_Pod a pro:Game ;
+	pro:wikidata wd:Q18326298 ;
+	rdfs:label "Star Wars Battle Pod"@en ;
+	pro:genre wd:Q2127647 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/BattlePods%20Yonge%20Eg%2002.jpg> ;
+	pro:platforms wd:Q21436386 ;
+	pro:dev wd:Q1194689 ;
+	pro:publisher wd:Q1194689 ;
+	pro:intern dat:Star_Wars_Battle_Pod .
+
+dat:Bubble_Ghost pro:platforms wd:Q478829 .
+
+dat:Championship_Manager_2010 a pro:Game ;
+	pro:wikidata wd:Q2664926 ;
+	rdfs:label "Championship Manager 2010"@en ;
+	pro:genre wd:Q1478420 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Eidos%20logo.svg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q1770526 ;
+	pro:publisher wd:Q679933 ;
+	pro:intern dat:Championship_Manager_2010 ;
+	pro:platforms wd:Q14116 .
+
+dat:Star_Wars_Battle_Pod pro:platforms wd:Q1349717 .
+
+dat:Just_Dance_4 a pro:Game ;
+	pro:wikidata wd:Q3811483 ;
+	rdfs:label "Just Dance 4"@en ;
+	pro:genre wd:Q584105 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Just%20Dance%204%20Logo.png> ;
+	pro:platforms wd:Q8079 ;
+	pro:dev wd:Q2807996 ;
+	pro:publisher wd:Q188273 ;
+	pro:intern dat:Just_Dance_4 ;
+	pro:platforms wd:Q10683 , wd:Q48263 , wd:Q56942 ;
+	pro:genre wd:Q2187138 .
+
+dat:Final_Fantasy_IV pro:platforms wd:Q170323 , wd:Q170325 , wd:Q183259 , wd:Q188642 , wd:Q10677 , wd:Q48493 .
+
+dat:Botanicula a pro:Game ;
+	pro:wikidata wd:Q745374 ;
+	rdfs:label "Botanicula"@en ;
+	pro:genre wd:Q11590806 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Jarom%C3%ADr%20Plach%C3%BD%20%26%20Jakub%20Dvorsk%C3%BD%20%281%29.jpg> ;
+	pro:platforms wd:Q14116 ;
+	pro:dev wd:Q2540486 ;
+	pro:publisher wd:Q1157042 ;
+	pro:intern dat:Botanicula ;
+	pro:publisher wd:Q2540486 , wd:Q4434012 ;
+	pro:platforms wd:Q48493 ;
+	pro:genre wd:Q2762504 , wd:Q3739535 , wd:Q2628513 , wd:Q54767 .
+
+<http://api.pa1007.dev/data/Sonic_&_All-Stars_Racing_Transformed> pro:platforms wd:Q188808 , wd:Q203597 , wd:Q56942 .
+
+dat:The_Mark_of_Kri a pro:Game ;
+	pro:wikidata wd:Q7750358 ;
+	rdfs:label "The Mark of Kri"@en ;
+	pro:genre wd:Q343568 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Rau%20sketch%20with%20filters%20by%20Curfs.jpg> ;
+	pro:platforms wd:Q10683 ;
+	pro:dev wd:Q1254072 ;
+	pro:publisher wd:Q18594 ;
+	pro:intern dat:The_Mark_of_Kri ;
+	pro:platforms wd:Q10680 .
+
+dat:SimCity_2000 pro:dev wd:Q3090767 .
+
+dat:Dead_Island a pro:Game ;
+	pro:wikidata wd:Q1180815 ;
+	rdfs:label "Dead Island"@en ;
+	pro:genre wd:Q1422746 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Dead%20Island%20at%20the%202011%20New%20York%20Comic%20Con%20%286254213788%29.jpg> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q2066242 ;
+	pro:publisher wd:Q553658 ;
+	pro:intern dat:Dead_Island ;
+	pro:platforms wd:Q1406 , wd:Q10683 , wd:Q48263 .
+
+dat:RoboBlitz a pro:Game ;
+	pro:wikidata wd:Q2180479 ;
+	rdfs:label "RoboBlitz"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/RoboBlitz%20-%20Screenshot%2001.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q2317766 ;
+	pro:publisher wd:Q2317766 ;
+	pro:intern dat:RoboBlitz ;
+	pro:genre wd:Q270948 , wd:Q380266 , wd:Q27670585 .
+
+dat:F-Zero_AX a pro:Game ;
+	pro:wikidata wd:Q3062932 ;
+	rdfs:label "F-Zero AX"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/F-Zero%20AX%20deluxe%20cabinet.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q2655759 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:F-Zero_AX .
+
+<http://api.pa1007.dev/data/The_Sting!> a pro:Game ;
+	pro:wikidata wd:Q11704521 ;
+	rdfs:label "The Sting!"@en ;
+	pro:genre wd:Q472055 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Sting%20%281973%20alt%20poster%29.jpeg> ;
+	pro:platforms wd:Q16338 ;
+	pro:dev wd:Q2291482 ;
+	pro:publisher wd:Q696625 ;
+	pro:intern <http://api.pa1007.dev/data/The_Sting!> ;
+	pro:genre wd:Q23916 .
+
+dat:Paradise a pro:Game ;
+	pro:wikidata wd:Q2334357 ;
+	rdfs:label "Paradise"@en ;
+	pro:genre wd:Q23916 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Paradise%20by%20B.%20Sokal%20-%20logo.svg> ;
+	pro:platforms wd:Q170323 ;
+	pro:dev wd:Q2383810 ;
+	pro:publisher wd:Q188273 ;
+	pro:intern dat:Paradise ;
+	pro:platforms wd:Q1406 , wd:Q48493 .
+
+dat:Mario_Kart_Arcade_GP_DX a pro:Game ;
+	pro:wikidata wd:Q16040657 ;
+	rdfs:label "Mario Kart Arcade GP DX"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/2015%2C%20by%20Mike%20Mozart%20of%20TheToyChannel%20and%20JeepersMedia%20on%20YouTube%20-Dave%20-Busters%20-%2016281230799.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q1194689 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Mario_Kart_Arcade_GP_DX .
+
+dat:Final_Fantasy_X-2 a pro:Game ;
+	pro:wikidata wd:Q633011 ;
+	rdfs:label "Final Fantasy X-2"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Final%20Fantasy%20X-2%20wordmark.png> ;
+	pro:platforms wd:Q188808 ;
+	pro:dev wd:Q739552 ;
+	pro:publisher wd:Q739552 ;
+	pro:intern dat:Final_Fantasy_X-2 .
+
+dat:Abyss_Odyssey a pro:Game ;
+	pro:wikidata wd:Q17989013 ;
+	rdfs:label "Abyss Odyssey"@en ;
+	pro:genre wd:Q1143132 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Abyss%20Odyssey%20-%20Screenshot%2001.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q2080159 ;
+	pro:publisher wd:Q780528 ;
+	pro:intern dat:Abyss_Odyssey ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Abyss%20Odyssey%20-%20Screenshot%2006.jpg> ;
+	pro:genre wd:Q2762504 .
+
+dat:Final_Fantasy_X-2 pro:platforms wd:Q10683 , wd:Q10680 .
+
+dat:Final_Fantasy_II a pro:Game ;
+	pro:wikidata wd:Q921957 ;
+	rdfs:label "Final Fantasy II"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Final%20Fantasy%20II%20wordmark.png> ;
+	pro:platforms wd:Q10677 ;
+	pro:dev wd:Q739552 ;
+	pro:publisher wd:Q739552 ;
+	pro:intern dat:Final_Fantasy_II ;
+	pro:platforms wd:Q94 , wd:Q48493 , wd:Q170325 , wd:Q172742 , wd:Q188642 .
+
+dat:Gorf a pro:Game ;
+	pro:wikidata wd:Q1517301 ;
+	rdfs:label "Gorf"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Gorf.JPG> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q3703045 ;
+	pro:publisher wd:Q208305 ;
+	pro:intern dat:Gorf ;
+	pro:publisher wd:Q15895939 , wd:Q15895956 ;
+	pro:platforms wd:Q192851 , wd:Q206261 , wd:Q249075 , wd:Q743222 , wd:Q918232 , wd:Q1046862 .
+
+dat:Botanicula pro:platforms wd:Q1406 , wd:Q388 , wd:Q94 .
+
+dat:Tiger-Heli a pro:Game ;
+	pro:wikidata wd:Q3285256 ;
+	rdfs:label "Tiger-Heli"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20M%C3%A9canique%20022.JPG> ;
+	pro:platforms wd:Q172742 ;
+	pro:dev wd:Q2291232 ;
+	pro:publisher wd:Q1054844 ;
+	pro:intern dat:Tiger-Heli ;
+	pro:platforms wd:Q192851 .
+
+dat:Zeno_Clash_II a pro:Game ;
+	pro:wikidata wd:Q2080517 ;
+	rdfs:label "Zeno Clash II"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Zeno%20Clash%20II%20-%20Screenshot%2001.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q2080159 ;
+	pro:publisher wd:Q780528 ;
+	pro:intern dat:Zeno_Clash_II ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Zeno%20Clash%20II%20-%20Screenshot%2003.jpg> ;
+	pro:platforms wd:Q10683 , wd:Q48263 ;
+	pro:genre wd:Q846224 .
+
+dat:Zeno_Clash a pro:Game ;
+	pro:wikidata wd:Q1113131 ;
+	rdfs:label "Zeno Clash"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Zeno%20Clash%20-%20Ghat%20%26%20Deadra.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q2080159 ;
+	pro:publisher wd:Q193559 ;
+	pro:intern dat:Zeno_Clash ;
+	pro:platforms wd:Q48263 ;
+	pro:genre wd:Q846224 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Zeno%20Clash%20-%20Father-Mother.jpg> ;
+	pro:genre wd:Q2762504 .
+
+<http://api.pa1007.dev/data/The_Sting!> pro:platforms wd:Q1406 .
+
+dat:Final_Fantasy_III a pro:Game ;
+	pro:wikidata wd:Q687559 ;
+	rdfs:label "Final Fantasy III"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Final%20Fantasy%20III%20wordmark.png> ;
+	pro:platforms wd:Q170323 ;
+	pro:dev wd:Q739552 ;
+	pro:publisher wd:Q739552 ;
+	pro:intern dat:Final_Fantasy_III ;
+	pro:platforms wd:Q170325 , wd:Q172742 , wd:Q4885200 , wd:Q1391641 , wd:Q1406 , wd:Q94 , wd:Q48493 .
+
+dat:Final_Fantasy_XI a pro:Game ;
+	pro:wikidata wd:Q678394 ;
+	rdfs:label "Final Fantasy XI"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Final%20Fantasy%20XI%20wordmark.png> ;
+	pro:platforms wd:Q188808 ;
+	pro:dev wd:Q739552 ;
+	pro:publisher wd:Q18594 ;
+	pro:intern dat:Final_Fantasy_XI ;
+	pro:genre wd:Q175173 ;
+	pro:platforms wd:Q1406 , wd:Q10680 , wd:Q94 , wd:Q48263 , wd:Q48493 .
+
+dat:Guitar_Hero_II a pro:Game ;
+	pro:wikidata wd:Q1798154 ;
+	rdfs:label "Guitar Hero II"@en ;
+	pro:genre wd:Q584105 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Guitar%20Hero%20II%20Logo.jpg> ;
+	pro:platforms wd:Q10680 ;
+	pro:dev wd:Q2607531 ;
+	pro:publisher wd:Q200491 ;
+	pro:intern dat:Guitar_Hero_II ;
+	pro:platforms wd:Q48263 .
+
+dat:Metal_Gear_Solid_HD_Collection pro:dev wd:Q2531521 .
+
+dat:Guitar_Hero_II pro:genre wd:Q2632782 .
+
+dat:Sega_Rally_2 a pro:Game ;
+	pro:wikidata wd:Q2435959 ;
+	rdfs:label "Sega Rally 2"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Segarally2.jpg> ;
+	pro:platforms wd:Q184198 ;
+	pro:dev wd:Q3082031 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Sega_Rally_2 ;
+	pro:platforms wd:Q1406 .
+
+dat:Wario_Land_II a pro:Game ;
+	pro:wikidata wd:Q1635462 ;
+	rdfs:label "Wario Land II"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Wario%20Land%20II%20logo.png> ;
+	pro:platforms wd:Q186437 ;
+	pro:dev wd:Q2633052 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Wario_Land_II .
+
+dat:Gorf pro:publisher wd:Q149947 .
+
+dat:Cupid_Parasite a pro:Game ;
+	pro:wikidata wd:Q107426518 ;
+	rdfs:label "Cupid Parasite"@en ;
+	pro:genre wd:Q1049203 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Cupid%20Parasite%20Packshot%200713.png> ;
+	pro:platforms wd:Q19610114 ;
+	pro:dev wd:Q2985270 ;
+	pro:publisher wd:Q2985270 ;
+	pro:intern dat:Cupid_Parasite ;
+	pro:publisher wd:Q107631140 ;
+	pro:genre wd:Q689445 .
+
+dat:Syberia_III pro:dev wd:Q2857799 .
+
+dat:Zeno_Clash pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Zeno%20Clash%20-%20Corwids.jpg> .
+
+dat:Gears_Tactics pro:dev wd:Q4922077 .
+
+dat:Sega_Rally_Championship a pro:Game ;
+	pro:wikidata wd:Q1754927 ;
+	rdfs:label "Sega Rally Championship"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Sega%20Rally%20Twin%20-%20Japanese%20Cabinet.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q3082031 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Sega_Rally_Championship ;
+	pro:platforms wd:Q188642 , wd:Q192851 , wd:Q200912 , wd:Q336434 .
+
+dat:Gears_5 a pro:Game ;
+	pro:wikidata wd:Q55128278 ;
+	rdfs:label "Gears 5"@en ;
+	pro:genre wd:Q380266 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Gears%205%20Hivebuster%20Squad.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q4922077 ;
+	pro:publisher wd:Q73801 ;
+	pro:intern dat:Gears_5 ;
+	pro:platforms wd:Q13361286 , wd:Q98973368 .
+
+dat:The_Testament_of_Sherlock_Holmes a pro:Game ;
+	pro:wikidata wd:Q2667499 ;
+	rdfs:label "The Testament of Sherlock Holmes"@en ;
+	pro:genre wd:Q343568 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Testament%20of%20SH%20-%20In%20the%20street.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q2541023 ;
+	pro:publisher wd:Q921944 ;
+	pro:intern dat:The_Testament_of_Sherlock_Holmes ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Testament%20of%20SH%20-%20Timbered%20house.jpg> ;
+	pro:platforms wd:Q10683 , wd:Q48263 .
+
+dat:Fallout_3 a pro:Game ;
+	pro:wikidata wd:Q221164 ;
+	rdfs:label "Fallout 3"@en ;
+	pro:genre wd:Q1422746 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Fallout%203%20logo%20transparent.svg> ;
+	pro:platforms wd:Q13361286 ;
+	pro:dev wd:Q3300783 ;
+	pro:publisher wd:Q684425 ;
+	pro:intern dat:Fallout_3 ;
+	pro:genre wd:Q85422949 ;
+	pro:platforms wd:Q10683 , wd:Q48263 , wd:Q1406 .
+
+dat:Kookabonga_Crazy_Monkey_Party a pro:Game ;
+	pro:wikidata wd:Q55830987 ;
+	rdfs:label "Kookabonga Crazy Monkey Party"@en ;
+	pro:genre wd:Q7888616 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Kookabonga%20logo.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q1570468 ;
+	pro:publisher wd:Q2981951 ;
+	pro:intern dat:Kookabonga_Crazy_Monkey_Party .
+
+dat:Fallout_3 pro:genre wd:Q744038 , wd:Q380266 , wd:Q185029 .
+
+dat:Dead_or_Alive_Xtreme_Beach_Volleyball a pro:Game ;
+	pro:wikidata wd:Q1776302 ;
+	rdfs:label "Dead or Alive Xtreme Beach Volleyball"@en ;
+	pro:genre wd:Q868217 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Doalogo.jpg> ;
+	pro:platforms wd:Q132020 ;
+	pro:dev wd:Q2740414 ;
+	pro:publisher wd:Q1423789 ;
+	pro:intern dat:Dead_or_Alive_Xtreme_Beach_Volleyball .
+
+dat:Raiden_II a pro:Game ;
+	pro:wikidata wd:Q3417638 ;
+	rdfs:label "Raiden II"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20M%C3%A9canique%20190.JPG> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q2288948 ;
+	pro:publisher wd:Q2288948 ;
+	pro:intern dat:Raiden_II .
+
+dat:World_Club_Champion_Football a pro:Game ;
+	pro:wikidata wd:Q10926273 ;
+	rdfs:label "World Club Champion Football"@en ;
+	pro:genre wd:Q1478420 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Wccf2012.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q3082031 ;
+	pro:publisher wd:Q20045200 ;
+	pro:intern dat:World_Club_Champion_Football .
+
+dat:Raiden_II pro:platforms wd:Q24159643 .
+
+dat:Supremacy_MMA a pro:Game ;
+	pro:wikidata wd:Q7644782 ;
+	rdfs:label "Supremacy MMA"@en ;
+	pro:genre wd:Q846224 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Felice%20Herrig%20fighting%20at%20Muay%20Thai%20Mayhem%20XIV.jpg> ;
+	pro:platforms wd:Q10683 ;
+	pro:dev wd:Q6444446 ;
+	pro:publisher wd:Q2068658 ;
+	pro:intern dat:Supremacy_MMA ;
+	pro:platforms wd:Q48263 , wd:Q188808 .
+
+dat:In_the_Groove_2 a pro:Game ;
+	pro:wikidata wd:Q4041351 ;
+	rdfs:label "In the Groove 2"@en ;
+	pro:genre wd:Q584105 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Itg%20machine.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q3445709 ;
+	pro:publisher wd:Q3445709 ;
+	pro:intern dat:In_the_Groove_2 .
+
+dat:Super_Scope_6 a pro:Game ;
+	pro:wikidata wd:Q3342057 ;
+	rdfs:label "Super Scope 6"@en ;
+	pro:genre wd:Q3965952 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Photo%20nintendo%20scope%206.jpg> ;
+	pro:platforms wd:Q183259 ;
+	pro:dev wd:Q2633052 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Super_Scope_6 .
+
+dat:Metal_Gear_Solid_HD_Collection pro:dev wd:Q4807758 .
+
+dat:Strife a pro:Game ;
+	pro:wikidata wd:Q16259296 ;
+	rdfs:label "Strife"@en ;
+	pro:genre wd:Q1189206 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Strife%20steam.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q3320502 ;
+	pro:publisher wd:Q3320502 ;
+	pro:intern dat:Strife .
+
+<http://api.pa1007.dev/data/Pocky_&_Rocky_with_Becky> a pro:Game ;
+	pro:wikidata wd:Q7206482 ;
+	rdfs:label "Pocky & Rocky with Becky"@en ;
+	pro:genre wd:Q343568 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Frankfurt%20Katharinenkirche%20Orgelprospekt%201990.jpg> ;
+	pro:platforms wd:Q188642 ;
+	pro:dev wd:Q3303197 ;
+	pro:publisher wd:Q3772556 ;
+	pro:intern <http://api.pa1007.dev/data/Pocky_&_Rocky_with_Becky> .
+
+dat:Chernobylite a pro:Game ;
+	pro:wikidata wd:Q61994841 ;
+	rdfs:label "Chernobylite"@en ;
+	pro:genre wd:Q333967 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Chernobylite.svg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q4051069 ;
+	pro:publisher wd:Q4051069 ;
+	pro:intern dat:Chernobylite ;
+	pro:publisher wd:Q86679800 ;
+	pro:genre wd:Q27670585 ;
+	pro:platforms wd:Q13361286 , wd:Q5014725 , wd:Q63184502 , wd:Q98973368 .
+
+dat:Everything a pro:Game ;
+	pro:wikidata wd:Q29057412 ;
+	rdfs:label "Everything"@en ;
+	pro:genre wd:Q45045 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Everything%20KeyArt.jpg> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q5238157 ;
+	pro:publisher wd:Q1251435 ;
+	pro:intern dat:Everything ;
+	pro:genre wd:Q1610017 , wd:Q536420 ;
+	pro:platforms wd:Q19610114 , wd:Q388 , wd:Q1406 , wd:Q14116 .
+
+dat:Burn_Zombie_Burn a pro:Game ;
+	pro:wikidata wd:Q4999549 ;
+	rdfs:label "Burn Zombie Burn"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Bzb%20logo1.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q5300149 ;
+	pro:publisher wd:Q5300149 ;
+	pro:intern dat:Burn_Zombie_Burn ;
+	pro:platforms wd:Q10683 .
+
+dat:Crossout a pro:Game ;
+	pro:wikidata wd:Q20707353 ;
+	rdfs:label "Crossout"@en ;
+	pro:genre wd:Q270948 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Wikia-Gamescom-2016-103%20%2829015025316%29.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q4050746 ;
+	pro:publisher wd:Q1984338 ;
+	pro:intern dat:Crossout ;
+	pro:genre wd:Q380266 ;
+	pro:platforms wd:Q13361286 ;
+	pro:genre wd:Q2070892 ;
+	pro:platforms wd:Q5014725 ;
+	pro:genre wd:Q862490 .
+
+dat:Burn_Zombie_Burn pro:genre wd:Q4282636 .
+
+dat:Homefront pro:dev wd:Q286153 .
+
+dat:Fonz a pro:Game ;
+	pro:wikidata wd:Q5465225 ;
+	rdfs:label "Fonz"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Fonz%201976%20sega%20arcade%20flyer.JPG> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q122741 ;
+	pro:publisher wd:Q5607341 ;
+	pro:intern dat:Fonz .
+
+dat:Charlie_Murder a pro:Game ;
+	pro:wikidata wd:Q15916871 ;
+	rdfs:label "Charlie Murder"@en ;
+	pro:genre wd:Q1422746 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Charlie%20Murder%20screenshot%205.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q7533666 ;
+	pro:publisher wd:Q73801 ;
+	pro:intern dat:Charlie_Murder ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Charlie%20Murder%20screenshot%208.png> , <http://commons.wikimedia.org/wiki/Special:FilePath/Charlie%20Murder%20screenshot%209.png> ;
+	pro:platforms wd:Q1406 , wd:Q14116 , wd:Q48263 ;
+	pro:genre wd:Q401831 .
+
+dat:After_Burner a pro:Game ;
+	pro:wikidata wd:Q388929 ;
+	rdfs:label "After Burner"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Sega%20Afterburner.jpg> ;
+	pro:platforms wd:Q853547 ;
+	pro:dev wd:Q294587 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:After_Burner ;
+	pro:publisher wd:Q200491 ;
+	pro:platforms wd:Q10676 , wd:Q10680 , wd:Q23882 , wd:Q11703697 , wd:Q99775 , wd:Q100047 , wd:Q170434 , wd:Q172742 , wd:Q478829 , wd:Q627302 .
+
+dat:Metal_Gear_Solid_HD_Collection pro:dev wd:Q2708014 .
+
+dat:Digger a pro:Game ;
+	pro:wikidata wd:Q1224616 ;
+	rdfs:label "Digger"@en ;
+	pro:genre wd:Q192851 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Digger.JPG> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q3569281 ;
+	pro:publisher wd:Q3569281 ;
+	pro:intern dat:Digger ;
+	pro:genre wd:Q13717398 .
+
+dat:Richard_Burns_Rally a pro:Game ;
+	pro:wikidata wd:Q946557 ;
+	rdfs:label "Richard Burns Rally"@en ;
+	pro:genre wd:Q1417032 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Marcus%20Gr%C3%B6nholm%20Bunnings%20Jumps.jpg> ;
+	pro:platforms wd:Q132020 ;
+	pro:dev wd:Q3566461 ;
+	pro:publisher wd:Q1692707 ;
+	pro:intern dat:Richard_Burns_Rally .
+
+dat:Digger pro:platforms wd:Q170434 .
+
+dat:Richard_Burns_Rally pro:platforms wd:Q1406 , wd:Q10680 .
+
+<http://api.pa1007.dev/data/Metal_Slug_Bloc_Force_1_&_Metal_Slug_Blog_Force_1_du_jeu_arcade_sur_SNES> a pro:Game ;
+	pro:wikidata wd:Q14942984 ;
+	rdfs:label "Metal Slug Bloc Force 1 & Metal Slug Blog Force 1 du jeu arcade sur SNES"@en ;
+	pro:genre wd:Q60480500 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20M%C3%A9canique%20222.JPG> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q3337383 ;
+	pro:publisher wd:Q1044563 ;
+	pro:intern <http://api.pa1007.dev/data/Metal_Slug_Bloc_Force_1_&_Metal_Slug_Blog_Force_1_du_jeu_arcade_sur_SNES> ;
+	pro:platforms wd:Q10677 , wd:Q10680 , wd:Q94 , wd:Q48493 .
+
+dat:Trine a pro:Game ;
+	pro:wikidata wd:Q117859 ;
+	rdfs:label "Trine"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Trine%20-%20Wizard%20Lift.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q2419591 ;
+	pro:publisher wd:Q3492217 ;
+	pro:intern dat:Trine ;
+	pro:platforms wd:Q1406 , wd:Q10683 , wd:Q14116 ;
+	pro:genre wd:Q54767 , wd:Q2762504 ;
+	pro:platforms wd:Q170325 .
+
+<http://api.pa1007.dev/data/Metal_Slug_Bloc_Force_1_&_Metal_Slug_Blog_Force_1_du_jeu_arcade_sur_SNES> pro:platforms wd:Q170325 , wd:Q192851 .
+
+dat:Trine pro:platforms wd:Q5014725 .
+
+dat:Strife pro:platforms wd:Q1406 , wd:Q14116 .
+
+dat:Sky_Skipper a pro:Game ;
+	pro:wikidata wd:Q11311244 ;
+	rdfs:label "Sky Skipper"@en ;
+	pro:genre wd:Q270948 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Sky%20skipper%20panel.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q2633052 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Sky_Skipper .
+
+dat:Bubble_Bobble a pro:Game ;
+	pro:wikidata wd:Q88759 ;
+	rdfs:label "Bubble Bobble"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Bubble%20Bobble%20arcade%20machine.jpg> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q1066018 ;
+	pro:publisher wd:Q1066018 ;
+	pro:intern dat:Bubble_Bobble ;
+	pro:platforms wd:Q100047 .
+
+dat:Syberia_III pro:dev wd:Q6451704 .
+
+dat:Bubble_Bobble pro:platforms wd:Q135321 , wd:Q170434 , wd:Q172742 , wd:Q23882 .
+
+dat:Rock_of_Ages a pro:Game ;
+	pro:wikidata wd:Q4048375 ;
+	rdfs:label "Rock of Ages"@en ;
+	pro:genre wd:Q270948 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Rock%20of%20Ages%20-%20Greek.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q2080159 ;
+	pro:publisher wd:Q780528 ;
+	pro:intern dat:Rock_of_Ages ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Rock%20of%20Ages%20-%20Medieval.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Rock%20of%20Ages%20-%20Rococo.jpg> ;
+	pro:platforms wd:Q10683 , wd:Q48263 ;
+	pro:genre wd:Q472055 .
+
+dat:Computer_Space a pro:Game ;
+	pro:wikidata wd:Q1122324 ;
+	rdfs:label "Computer Space"@en ;
+	pro:genre wd:Q603481 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Computer%20Space%201971.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q3879935 ;
+	pro:publisher wd:Q3879935 ;
+	pro:intern dat:Computer_Space .
+
+dat:Warhawk a pro:Game ;
+	pro:wikidata wd:Q2191335 ;
+	rdfs:label "Warhawk"@en ;
+	pro:genre wd:Q578868 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/314th%20Fighter%20Squadron%20emblem.jpg> ;
+	pro:platforms wd:Q10677 ;
+	pro:dev wd:Q3484959 ;
+	pro:publisher wd:Q18594 ;
+	pro:intern dat:Warhawk .
+
+<http://api.pa1007.dev/data/Metal_Slug_Bloc_Force_1_&_Metal_Slug_Blog_Force_1_du_jeu_arcade_sur_SNES> pro:platforms wd:Q1054350 .
+
+dat:Computer_Space pro:genre wd:Q1044478 .
+
+<http://api.pa1007.dev/data/Metal_Slug_Bloc_Force_1_&_Metal_Slug_Blog_Force_1_du_jeu_arcade_sur_SNES> pro:platforms wd:Q19610114 .
+
+dat:Little_Big_Adventure a pro:Game ;
+	pro:wikidata wd:Q1141140 ;
+	rdfs:label "Little Big Adventure"@en ;
+	pro:genre wd:Q343568 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/LBA1%20-%20Gameplay%203D%20iso%20%282%29.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q939808 ;
+	pro:publisher wd:Q173941 ;
+	pro:intern dat:Little_Big_Adventure ;
+	pro:publisher wd:Q200491 , wd:Q3512266 ;
+	pro:platforms wd:Q10677 , wd:Q94 , wd:Q48493 , wd:Q170434 .
+
+dat:Mountain a pro:Game ;
+	pro:wikidata wd:Q29293936 ;
+	rdfs:label "Mountain"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mountain%20%28video%20game%29%20screenshot%203.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q5238157 ;
+	pro:publisher wd:Q1251435 ;
+	pro:intern dat:Mountain ;
+	pro:platforms wd:Q1406 , wd:Q14116 , wd:Q94 , wd:Q48493 ;
+	pro:genre wd:Q1610017 .
+
+dat:Sprint_2 a pro:Game ;
+	pro:wikidata wd:Q3494252 ;
+	rdfs:label "Sprint 2"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20M%C3%A9canique%20185.JPG> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q1774120 ;
+	pro:publisher wd:Q1774120 ;
+	pro:intern dat:Sprint_2 .
+
+dat:Bubble_Bobble pro:publisher wd:Q3441266 ;
+	pro:platforms wd:Q200912 , wd:Q209868 , wd:Q478829 , wd:Q5014725 , wd:Q627302 , wd:Q751719 , wd:Q853547 .
+
+dat:Hearts_of_Iron_IV a pro:Game ;
+	pro:wikidata wd:Q15712701 ;
+	rdfs:label "Hearts of Iron IV"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Hoi4-logo.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q3539040 ;
+	pro:publisher wd:Q217493 ;
+	pro:intern dat:Hearts_of_Iron_IV ;
+	pro:platforms wd:Q1406 , wd:Q14116 .
+
+dat:Block_Buster a pro:Game ;
+	pro:wikidata wd:Q4927133 ;
+	rdfs:label "Block Buster"@en ;
+	pro:genre wd:Q192851 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Milton-Bradley-Microvision-Handheld-FL.png> ;
+	pro:platforms wd:Q1475303 ;
+	pro:dev wd:Q2150493 ;
+	pro:publisher wd:Q2150493 ;
+	pro:intern dat:Block_Buster ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Microvision%20-%20Block%20Buster%20%281979%29%20-%20Gameplay%20screenshot.svg> .
+
+dat:Star_Raiders a pro:Game ;
+	pro:wikidata wd:Q1136685 ;
+	rdfs:label "Star Raiders"@en ;
+	pro:genre wd:Q6290007 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Star%20raider%20cart.jpg> ;
+	pro:platforms wd:Q206261 ;
+	pro:dev wd:Q13409231 ;
+	pro:publisher wd:Q13409231 ;
+	pro:intern dat:Star_Raiders ;
+	pro:platforms wd:Q249075 , wd:Q627302 , wd:Q743222 ;
+	pro:genre wd:Q27670585 .
+
+dat:Dink_Smallwood a pro:Game ;
+	pro:wikidata wd:Q594880 ;
+	rdfs:label "Dink Smallwood"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Dinksmallwoodlogo.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q4725289 ;
+	pro:publisher wd:Q10556387 ;
+	pro:intern dat:Dink_Smallwood ;
+	pro:platforms wd:Q1406 , wd:Q14116 , wd:Q94 , wd:Q48493 ;
+	pro:genre wd:Q343568 .
+
+dat:Borderlands_2 pro:dev wd:Q6072534 .
+
+dat:Legend_of_Wukong a pro:Game ;
+	pro:wikidata wd:Q6517780 ;
+	rdfs:label "Legend of Wukong"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Wkboxfront.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q5520409 ;
+	pro:publisher wd:Q7642339 ;
+	pro:intern dat:Legend_of_Wukong ;
+	pro:platforms wd:Q10676 , wd:Q14116 .
+
+dat:Ancient_Empires a pro:Game ;
+	pro:wikidata wd:Q4033986 ;
+	rdfs:label "Ancient Empires"@en ;
+	pro:genre wd:Q4375640 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Ancient%20Empires.jpg> ;
+	pro:platforms wd:Q193828 ;
+	pro:dev wd:Q4043566 ;
+	pro:publisher wd:Q4043566 ;
+	pro:intern dat:Ancient_Empires .
+
+<http://api.pa1007.dev/data/Burnout_Crash!> a pro:Game ;
+	pro:wikidata wd:Q2611392 ;
+	rdfs:label "Burnout Crash!"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Logo%20Burnout%20Crash.png> ;
+	pro:platforms wd:Q10683 ;
+	pro:dev wd:Q1548159 ;
+	pro:publisher wd:Q173941 ;
+	pro:intern <http://api.pa1007.dev/data/Burnout_Crash!> ;
+	pro:platforms wd:Q48263 , wd:Q48493 .
+
+dat:Centipede a pro:Game ;
+	pro:wikidata wd:Q1053648 ;
+	rdfs:label "Centipede"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Centipede%20Cabaret%20Arcade%20Game.jpg> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q13409231 ;
+	pro:publisher wd:Q207922 ;
+	pro:intern dat:Centipede ;
+	pro:publisher wd:Q7643562 ;
+	pro:platforms wd:Q170325 , wd:Q186437 , wd:Q188808 , wd:Q203992 , wd:Q206261 , wd:Q743222 , wd:Q749976 , wd:Q753600 , wd:Q1046862 , wd:Q14918005 , wd:Q1406 ;
+	pro:publisher wd:Q13409231 ;
+	pro:platforms wd:Q10677 , wd:Q10683 , wd:Q48493 .
+
+dat:Ancient_Trader a pro:Game ;
+	pro:wikidata wd:Q16060199 ;
+	rdfs:label "Ancient Trader"@en ;
+	pro:genre wd:Q2176159 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Ancient%20Trader%20logo.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q16060202 ;
+	pro:publisher wd:Q16060202 ;
+	pro:intern dat:Ancient_Trader ;
+	pro:platforms wd:Q48263 , wd:Q48493 .
+
+dat:Firefox a pro:Game ;
+	pro:wikidata wd:Q3072842 ;
+	rdfs:label "Firefox"@en ;
+	pro:genre wd:Q1635956 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Atari%20Firefox.JPG> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q13409231 ;
+	pro:publisher wd:Q13409231 ;
+	pro:intern dat:Firefox .
+
+dat:Battlezone a pro:Game ;
+	pro:wikidata wd:Q55616 ;
+	rdfs:label "Battlezone"@en ;
+	pro:genre wd:Q2070892 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20M%C3%A9canique%20205.JPG> ;
+	pro:platforms wd:Q627302 ;
+	pro:dev wd:Q13409231 ;
+	pro:publisher wd:Q13409231 ;
+	pro:intern dat:Battlezone ;
+	pro:platforms wd:Q918232 .
+
+dat:Missile_Command a pro:Game ;
+	pro:wikidata wd:Q1192794 ;
+	rdfs:label "Missile Command"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Missile%20Command.jpg> ;
+	pro:platforms wd:Q186437 ;
+	pro:dev wd:Q13409231 ;
+	pro:publisher wd:Q13409231 ;
+	pro:intern dat:Missile_Command ;
+	pro:platforms wd:Q192851 , wd:Q203992 , wd:Q206261 , wd:Q255528 , wd:Q627302 , wd:Q743222 , wd:Q853547 , wd:Q1406 , wd:Q10680 , wd:Q23882 , wd:Q48493 .
+
+dat:Hearts_of_Iron_IV pro:genre wd:Q1501543 , wd:Q1150710 .
+
+<http://api.pa1007.dev/data/Punch-Out!!> a pro:Game ;
+	pro:wikidata wd:Q2001209 ;
+	rdfs:label "Punch-Out!!"@en ;
+	pro:genre wd:Q3177953 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Auron%20from%20Final%20Fantasy%20X%20playing%20Punch-Out.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q7039175 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern <http://api.pa1007.dev/data/Punch-Out!!> .
+
+dat:Windosill a pro:Game ;
+	pro:wikidata wd:Q3569282 ;
+	rdfs:label "Windosill"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Windosill%20screenshot%2004.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q33440588 ;
+	pro:publisher wd:Q33440588 ;
+	pro:intern dat:Windosill ;
+	pro:platforms wd:Q1406 , wd:Q14116 , wd:Q48493 .
+
+dat:Star_Wars a pro:Game ;
+	pro:wikidata wd:Q54317 ;
+	rdfs:label "Star Wars"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Star%20Wars%20-%201983%20video%20game%20cabinet.jpg> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q13409231 ;
+	pro:publisher wd:Q216611 ;
+	pro:intern dat:Star_Wars ;
+	pro:platforms wd:Q100047 ;
+	pro:publisher wd:Q995863 , wd:Q1235040 , wd:Q1501379 , wd:Q13409231 ;
+	pro:platforms wd:Q170434 , wd:Q192851 , wd:Q206261 , wd:Q342163 , wd:Q478829 , wd:Q627302 , wd:Q743222 , wd:Q749976 , wd:Q1046862 , wd:Q23882 .
+
+dat:Strike_Suit_Zero a pro:Game ;
+	pro:wikidata wd:Q7623793 ;
+	rdfs:label "Strike Suit Zero"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Strike%20Suit%20Zero%20-%20Screenshot%2005.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q33508052 ;
+	pro:publisher wd:Q33508052 ;
+	pro:intern dat:Strike_Suit_Zero ;
+	pro:platforms wd:Q1406 , wd:Q14116 , wd:Q94 ;
+	pro:genre wd:Q107542373 ;
+	pro:platforms wd:Q19610114 ;
+	pro:genre wd:Q1892535 ;
+	pro:platforms wd:Q13361286 , wd:Q5014725 .
+
+dat:Battlezone pro:genre wd:Q1610017 ;
+	pro:platforms wd:Q99775 , wd:Q170325 , wd:Q170434 , wd:Q206261 , wd:Q23882 .
+
+dat:Fez a pro:Game ;
+	pro:wikidata wd:Q2581523 ;
+	rdfs:label "Fez"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Fez%20%28video%20game%29%20cover%20art.png> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q7227120 ;
+	pro:publisher wd:Q73801 ;
+	pro:intern dat:Fez ;
+	pro:genre wd:Q54767 ;
+	pro:platforms wd:Q188808 ;
+	pro:publisher wd:Q7835553 ;
+	pro:platforms wd:Q19610114 , wd:Q388 , wd:Q1406 , wd:Q10683 , wd:Q14116 , wd:Q48263 , wd:Q48493 ;
+	pro:genre wd:Q62591185 .
+
+dat:Age_of_Empires_IV a pro:Game ;
+	pro:wikidata wd:Q55154676 ;
+	rdfs:label "Age of Empires IV"@en ;
+	pro:genre wd:Q208189 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/GUI%20w%C3%A4hrend%20Spiel%20Age%20of%20Empires%20IV.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q1518612 ;
+	pro:publisher wd:Q73801 ;
+	pro:intern dat:Age_of_Empires_IV .
+
+dat:Goodgame_Empire a pro:Game ;
+	pro:wikidata wd:Q16302401 ;
+	rdfs:label "Goodgame Empire"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Goodgame%20Empire%20Screenshot%20Burg.jpg> ;
+	pro:platforms wd:Q48493 ;
+	pro:dev wd:Q1537551 ;
+	pro:publisher wd:Q1537551 ;
+	pro:intern dat:Goodgame_Empire .
+
+dat:Age_of_Empires_IV pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Offizielle%20Concept%20Art%20von%20Age%20of%20Empires%20IV.png> .
+
+dat:Goodgame_Empire pro:genre wd:Q472055 .
+
+dat:Fez pro:genre wd:Q23916 .
+
+dat:Genomics_Digital_Lab a pro:Game ;
+	pro:wikidata wd:Q5533502 ;
+	rdfs:label "Genomics Digital Lab"@en ;
+	pro:genre wd:Q1224999 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/GDLv4%20tissue.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q17148745 ;
+	pro:publisher wd:Q17148745 ;
+	pro:intern dat:Genomics_Digital_Lab .
+
+dat:History_of_Biology a pro:Game ;
+	pro:wikidata wd:Q5775293 ;
+	rdfs:label "History of Biology"@en ;
+	pro:genre wd:Q1224999 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/History%20of%20Biology.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q17148745 ;
+	pro:publisher wd:Q17148745 ;
+	pro:intern dat:History_of_Biology .
+
+dat:Halo_4 pro:dev wd:Q5065045 .
+
+dat:Duck_Hunt a pro:Game ;
+	pro:wikidata wd:Q764069 ;
+	rdfs:label "Duck Hunt"@en ;
+	pro:genre wd:Q71474253 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Duck%20hunt%20video%20game.jpg> ;
+	pro:platforms wd:Q1349717 ;
+	pro:dev wd:Q2633052 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:Duck_Hunt ;
+	pro:genre wd:Q3965952 , wd:Q185029 ;
+	pro:platforms wd:Q172742 .
+
+dat:Rochard a pro:Game ;
+	pro:wikidata wd:Q7353776 ;
+	rdfs:label "Rochard"@en ;
+	pro:genre wd:Q19643088 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Rochard%20Cover.PNG> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q23045305 ;
+	pro:publisher wd:Q959672 ;
+	pro:intern dat:Rochard ;
+	pro:platforms wd:Q1406 , wd:Q10683 , wd:Q14116 , wd:Q94 .
+
+dat:Thomas_Was_Alone a pro:Game ;
+	pro:wikidata wd:Q7794906 ;
+	rdfs:label "Thomas Was Alone"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20was%20alone%20cover.png> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q16988330 ;
+	pro:publisher wd:Q4947547 ;
+	pro:intern dat:Thomas_Was_Alone ;
+	pro:genre wd:Q2762504 ;
+	pro:platforms wd:Q388 , wd:Q1406 , wd:Q10683 , wd:Q14116 , wd:Q94 , wd:Q48493 , wd:Q188808 ;
+	pro:dev wd:Q19871264 ;
+	pro:publisher wd:Q16988330 , wd:Q57362423 ;
+	pro:platforms wd:Q13361286 .
+
+dat:Hydro_Thunder_Hurricane a pro:Game ;
+	pro:wikidata wd:Q12252310 ;
+	rdfs:label "Hydro Thunder Hurricane"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/MadisonRegattaWinner2008.jpg> ;
+	pro:platforms wd:Q48263 ;
+	pro:dev wd:Q7917814 ;
+	pro:publisher wd:Q73801 ;
+	pro:intern dat:Hydro_Thunder_Hurricane .
+
+dat:Apex_Legends a pro:Game ;
+	pro:wikidata wd:Q61478103 ;
+	rdfs:label "Apex Legends"@en ;
+	pro:genre wd:Q1260861 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Apex%20Legends%20gaming%20Gamescom%202019%20%2848605673176%29.jpg> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q7884447 ;
+	pro:publisher wd:Q173941 ;
+	pro:intern dat:Apex_Legends ;
+	pro:genre wd:Q30607131 ;
+	pro:platforms wd:Q13361286 ;
+	pro:genre wd:Q185029 ;
+	pro:platforms wd:Q1406 , wd:Q19610114 .
+
+dat:War_of_the_Vikings a pro:Game ;
+	pro:wikidata wd:Q16267705 ;
+	rdfs:label "War of the Vikings"@en ;
+	pro:genre wd:Q270948 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/War%20of%20the%20Vikings%2C%20screen%20of%20gameplay%2C%20Docks%20map%2C%20early%20access%2C%20alpha.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q5437954 ;
+	pro:publisher wd:Q217493 ;
+	pro:intern dat:War_of_the_Vikings .
+
+dat:Time_Traveler a pro:Game ;
+	pro:wikidata wd:Q7805168 ;
+	rdfs:label "Time Traveler"@en ;
+	pro:genre wd:Q192851 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Arcade%20complete%20view.jpg> ;
+	pro:platforms wd:Q203315 ;
+	pro:dev wd:Q5514680 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Time_Traveler ;
+	pro:genre wd:Q1635956 .
+
+dat:Flinthook a pro:Game ;
+	pro:wikidata wd:Q24706010 ;
+	rdfs:label "Flinthook"@en ;
+	pro:genre wd:Q1143132 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Flinthook%20screenshot%20-%20Pax%20worm.png> ;
+	pro:platforms wd:Q13361286 ;
+	pro:dev wd:Q7840515 ;
+	pro:publisher wd:Q7840515 ;
+	pro:intern dat:Flinthook ;
+	pro:platforms wd:Q5014725 ;
+	pro:genre wd:Q828322 .
+
+dat:Harpoon a pro:Game ;
+	pro:wikidata wd:Q16267365 ;
+	rdfs:label "Harpoon"@en ;
+	pro:genre wd:Q2313710 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/51163.jpg> ;
+	pro:platforms wd:Q100047 ;
+	pro:dev wd:Q7797234 ;
+	pro:publisher wd:Q1993220 ;
+	pro:intern dat:Harpoon ;
+	pro:platforms wd:Q13522376 , wd:Q170434 .
+
+dat:Flinthook pro:platforms wd:Q19610114 , wd:Q388 , wd:Q1406 , wd:Q14116 .
+
+dat:Blocks_That_Matter a pro:Game ;
+	pro:wikidata wd:Q1563815 ;
+	rdfs:label "Blocks That Matter"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Niveau%20de%20Blocks%20That%20Matter.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q16678366 ;
+	pro:publisher wd:Q16678366 ;
+	pro:intern dat:Blocks_That_Matter ;
+	pro:platforms wd:Q1406 , wd:Q14116 , wd:Q48263 ;
+	pro:genre wd:Q2762504 , wd:Q828322 .
+
+dat:End_of_Nations a pro:Game ;
+	pro:wikidata wd:Q2576920 ;
+	rdfs:label "End of Nations"@en ;
+	pro:genre wd:Q1189206 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Navlogo.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q7843146 ;
+	pro:publisher wd:Q7843146 ;
+	pro:intern dat:End_of_Nations .
+
+dat:Legend_of_Grimrock a pro:Game ;
+	pro:wikidata wd:Q1812427 ;
+	rdfs:label "Legend of Grimrock"@en ;
+	pro:genre wd:Q1422746 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Legend%20of%20Grimrock%20DVD%20cover.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q15737144 ;
+	pro:publisher wd:Q15737144 ;
+	pro:intern dat:Legend_of_Grimrock ;
+	pro:platforms wd:Q1406 ;
+	pro:genre wd:Q2762504 , wd:Q1265717 .
+
+dat:The_Swapper a pro:Game ;
+	pro:wikidata wd:Q13427428 ;
+	rdfs:label "The Swapper"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Swapper%20-%20Screenshot%2003.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q33508176 ;
+	pro:publisher wd:Q33508176 ;
+	pro:intern dat:The_Swapper ;
+	pro:platforms wd:Q1406 , wd:Q10683 , wd:Q14116 , wd:Q56942 ;
+	pro:genre wd:Q19643088 ;
+	pro:platforms wd:Q188808 , wd:Q5014725 ;
+	pro:genre wd:Q27670585 .
+
+dat:Legend_of_Grimrock pro:platforms wd:Q14116 , wd:Q48493 .
+
+dat:Chill a pro:Game ;
+	pro:wikidata wd:Q5098997 ;
+	rdfs:label "Chill"@en ;
+	pro:genre wd:Q178131 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Chill.jpg> ;
+	pro:platforms wd:Q10677 ;
+	pro:dev wd:Q10371490 ;
+	pro:publisher wd:Q679933 ;
+	pro:intern dat:Chill .
+
+dat:Kentucky_Route_Zero a pro:Game ;
+	pro:wikidata wd:Q6392377 ;
+	rdfs:label "Kentucky Route Zero"@en ;
+	pro:genre wd:Q276709 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/KentuckyRouteZero%20Screen01%20EquusOils.png> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q27928474 ;
+	pro:publisher wd:Q27928474 ;
+	pro:intern dat:Kentucky_Route_Zero .
+
+dat:Closure a pro:Game ;
+	pro:wikidata wd:Q1566165 ;
+	rdfs:label "Closure"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Le%20monde%20du%20carnaval.png> ;
+	pro:platforms wd:Q75687 ;
+	pro:dev wd:Q33438646 ;
+	pro:publisher wd:Q33438646 ;
+	pro:intern dat:Closure ;
+	pro:platforms wd:Q170325 .
+
+dat:Kentucky_Route_Zero pro:platforms wd:Q14116 .
+
+dat:Closure pro:platforms wd:Q1406 , wd:Q14116 .
+
+dat:World_of_Warplanes a pro:Game ;
+	pro:wikidata wd:Q2754466 ;
+	rdfs:label "World of Warplanes"@en ;
+	pro:genre wd:Q175173 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/World%20of%20Warplanes%20%40%20E3%202012%20%287164876589%29.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q15149297 ;
+	pro:publisher wd:Q372471 ;
+	pro:intern dat:World_of_Warplanes .
+
+dat:Everlasting_Summer a pro:Game ;
+	pro:wikidata wd:Q16273544 ;
+	rdfs:label "Everlasting Summer"@en ;
+	pro:genre wd:Q1046788 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Evsu%20logo.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q33461742 ;
+	pro:publisher wd:Q33461742 ;
+	pro:intern dat:Everlasting_Summer ;
+	pro:platforms wd:Q1406 , wd:Q14116 , wd:Q94 , wd:Q48493 ;
+	pro:genre wd:Q689445 .
+
+dat:Radar_Rat_Race a pro:Game ;
+	pro:wikidata wd:Q289109 ;
+	rdfs:label "Radar Rat Race"@en ;
+	pro:genre wd:Q13717398 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/CBM64CartridgeRadarRatRace.JPG> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q1068734 ;
+	pro:publisher wd:Q208305 ;
+	pro:intern dat:Radar_Rat_Race ;
+	pro:platforms wd:Q918232 .
+
+dat:Asteroids a pro:Game ;
+	pro:wikidata wd:Q748890 ;
+	rdfs:label "Asteroids"@en ;
+	pro:genre wd:Q27670585 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Del%20Tilt%20al%20Byte%20-%208.jpeg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q13409231 ;
+	pro:publisher wd:Q13409231 ;
+	pro:intern dat:Asteroids ;
+	pro:platforms wd:Q206261 , wd:Q255528 ;
+	pro:genre wd:Q4282636 ;
+	pro:platforms wd:Q753600 , wd:Q1406 , wd:Q94 , wd:Q48263 , wd:Q48493 .
+
+dat:VVVVVV a pro:Game ;
+	pro:wikidata wd:Q5766 ;
+	rdfs:label "VVVVVV"@en ;
+	pro:genre wd:Q62591185 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/VVVVVV%20-%20The%20Tomb%20of%20Mad%20Carew.png> ;
+	pro:platforms wd:Q188808 ;
+	pro:dev wd:Q11709677 ;
+	pro:publisher wd:Q7024361 ;
+	pro:intern dat:VVVVVV ;
+	pro:publisher wd:Q11709677 ;
+	pro:platforms wd:Q203597 , wd:Q225009 , wd:Q5014725 ;
+	pro:genre wd:Q19643088 ;
+	pro:platforms wd:Q1391641 , wd:Q19610114 , wd:Q388 , wd:Q1406 , wd:Q14116 , wd:Q94 , wd:Q48493 .
+
+dat:Thomas_Was_Alone pro:dev wd:Q4947547 .
+
+dat:And_Yet_It_Moves a pro:Game ;
+	pro:wikidata wd:Q489583 ;
+	rdfs:label "And Yet It Moves"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/And%20Yet%20It%20Moves%20title.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q32860761 ;
+	pro:publisher wd:Q32860761 ;
+	pro:intern dat:And_Yet_It_Moves ;
+	pro:platforms wd:Q1406 , wd:Q8079 , wd:Q14116 , wd:Q48493 ;
+	pro:genre wd:Q828322 , wd:Q62591185 .
+
+dat:Football_Manager_2021 a pro:Game ;
+	pro:wikidata wd:Q102165079 ;
+	rdfs:label "Football Manager 2021"@en ;
+	pro:genre wd:Q1478420 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Football-Manager-2021.jpg> ;
+	pro:platforms wd:Q19610114 ;
+	pro:dev wd:Q2567775 ;
+	pro:publisher wd:Q122741 ;
+	pro:intern dat:Football_Manager_2021 ;
+	pro:genre wd:Q1610017 ;
+	pro:platforms wd:Q98973368 , wd:Q1406 , wd:Q14116 , wd:Q94 , wd:Q48493 ;
+	pro:genre wd:Q56298645 ;
+	pro:platforms wd:Q13361286 .
+
+dat:Awesomenauts a pro:Game ;
+	pro:wikidata wd:Q3631304 ;
+	rdfs:label "Awesomenauts"@en ;
+	pro:genre wd:Q1189206 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Awesomenauts%20-%20Screenshot%2006.jpg> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q7365709 ;
+	pro:publisher wd:Q174891 ;
+	pro:intern dat:Awesomenauts ;
+	pro:genre wd:Q2762504 ;
+	pro:platforms wd:Q13361286 , wd:Q388 , wd:Q1406 , wd:Q10683 , wd:Q14116 , wd:Q48263 .
+
+dat:Kentucky_Route_Zero pro:genre wd:Q11590806 ;
+	pro:platforms wd:Q388 , wd:Q1406 ;
+	pro:publisher wd:Q38805988 ;
+	pro:genre wd:Q2762504 .
+
+dat:Absolver a pro:Game ;
+	pro:wikidata wd:Q24664848 ;
+	rdfs:label "Absolver"@en ;
+	pro:genre wd:Q1422746 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Absolver%20screenshot%20Forest.png> ;
+	pro:platforms wd:Q13361286 ;
+	pro:dev wd:Q24664854 ;
+	pro:publisher wd:Q5267669 ;
+	pro:intern dat:Absolver ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Absolver%20screenshot%20Help.png> ;
+	pro:platforms wd:Q5014725 , wd:Q1406 .
+
+dat:Mortal_Kombat_11 a pro:Game ;
+	pro:wikidata wd:Q59511757 ;
+	rdfs:label "Mortal Kombat 11"@en ;
+	pro:genre wd:Q846224 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mortal%20Kombat%2011%20karakter%20se%C3%A7me%20ekran%C4%B1.jpg> ;
+	pro:platforms wd:Q98973368 ;
+	pro:dev wd:Q2696696 ;
+	pro:publisher wd:Q2319420 ;
+	pro:intern dat:Mortal_Kombat_11 .
+
+dat:Dustforce a pro:Game ;
+	pro:wikidata wd:Q4037709 ;
+	rdfs:label "Dustforce"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Dustforce%20-%20Screenshot%2008.png> ;
+	pro:platforms wd:Q48263 ;
+	pro:dev wd:Q14913022 ;
+	pro:publisher wd:Q14428 ;
+	pro:intern dat:Dustforce ;
+	pro:genre wd:Q828322 ;
+	pro:platforms wd:Q388 , wd:Q1406 , wd:Q10683 , wd:Q14116 , wd:Q188808 .
+
+dat:System_Shock_2 a pro:Game ;
+	pro:wikidata wd:Q1371495 ;
+	rdfs:label "System Shock 2"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/System%20Shock%202%20Logo.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q743717 ;
+	pro:publisher wd:Q173941 ;
+	pro:intern dat:System_Shock_2 ;
+	pro:platforms wd:Q1406 , wd:Q14116 ;
+	pro:genre wd:Q333967 , wd:Q54323360 , wd:Q744038 , wd:Q270948 .
+
+dat:Ladder a pro:Game ;
+	pro:wikidata wd:Q6469305 ;
+	rdfs:label "Ladder"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/%D0%9B%D0%B5%D1%81%D1%82%D0%BD%D0%B8%D1%86%D0%B0-%D0%B8%D0%B3%D1%80%D0%B0.jpg> ;
+	pro:platforms wd:Q219528 ;
+	pro:dev wd:Q8046889 ;
+	pro:publisher wd:Q914171 ;
+	pro:intern dat:Ladder ;
+	pro:platforms wd:Q914171 .
+
+dat:Pong a pro:Game ;
+	pro:wikidata wd:Q216293 ;
+	rdfs:label "Pong"@en ;
+	pro:genre wd:Q868217 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Signed%20Pong%20Cabinet.jpg> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q13409231 ;
+	pro:publisher wd:Q13409231 ;
+	pro:intern dat:Pong .
+
+dat:Adventure a pro:Game ;
+	pro:wikidata wd:Q379915 ;
+	rdfs:label "Adventure"@en ;
+	pro:genre wd:Q343568 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Atari%20Adventure%20Easter%20Egg%20on%20Atari%20%28Jakks%20Pacific%29%20Port.jpg> ;
+	pro:platforms wd:Q206261 ;
+	pro:dev wd:Q13409231 ;
+	pro:publisher wd:Q13409231 ;
+	pro:intern dat:Adventure .
+
+dat:Breakout a pro:Game ;
+	pro:wikidata wd:Q177491 ;
+	rdfs:label "Breakout"@en ;
+	pro:genre wd:Q2941225 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Screenshot-LBreakout2.jpg> ;
+	pro:platforms wd:Q10269192 ;
+	pro:dev wd:Q13409231 ;
+	pro:publisher wd:Q13409231 ;
+	pro:intern dat:Breakout .
+
+dat:VVVVVV pro:genre wd:Q2762504 .
+
+dat:World_of_Warplanes pro:dev wd:Q25386946 .
+
+dat:Cannon_Cadets a pro:Game ;
+	pro:wikidata wd:Q5032754 ;
+	rdfs:label "Cannon Cadets"@en ;
+	pro:genre wd:Q270948 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Cannon%20Cadets%20icon.png> ;
+	pro:platforms wd:Q14094 ;
+	pro:dev wd:Q8042304 ;
+	pro:publisher wd:Q8042304 ;
+	pro:intern dat:Cannon_Cadets ;
+	pro:platforms wd:Q48493 .
+
+dat:Cocoto_Kart_Racer a pro:Game ;
+	pro:wikidata wd:Q679254 ;
+	rdfs:label "Cocoto Kart Racer"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/CocotoKart.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q3337882 ;
+	pro:publisher wd:Q859575 ;
+	pro:intern dat:Cocoto_Kart_Racer ;
+	pro:platforms wd:Q8079 , wd:Q10680 , wd:Q170323 , wd:Q182172 , wd:Q188642 .
+
+dat:Breakout pro:genre wd:Q270948 ;
+	pro:platforms wd:Q192851 , wd:Q206261 , wd:Q743222 , wd:Q1406 , wd:Q48493 .
+
+dat:Oxenfree a pro:Game ;
+	pro:wikidata wd:Q22095911 ;
+	rdfs:label "Oxenfree"@en ;
+	pro:genre wd:Q2975633 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Oxenfree.svg> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q23761586 ;
+	pro:publisher wd:Q23761586 ;
+	pro:intern dat:Oxenfree ;
+	pro:genre wd:Q27670585 , wd:Q23916 ;
+	pro:platforms wd:Q19610114 ;
+	pro:genre wd:Q2762504 ;
+	pro:platforms wd:Q13361286 ;
+	pro:genre wd:Q7644030 ;
+	pro:platforms wd:Q388 , wd:Q1406 , wd:Q14116 , wd:Q94 , wd:Q48493 ;
+	pro:genre wd:Q182015 , wd:Q2628513 .
+
+dat:Space_Engineers a pro:Game ;
+	pro:wikidata wd:Q15269265 ;
+	rdfs:label "Space Engineers"@en ;
+	pro:genre wd:Q1610017 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Space%20Engineers%201.jpg> ;
+	pro:platforms wd:Q13361286 ;
+	pro:dev wd:Q12029133 ;
+	pro:publisher wd:Q4040478 ;
+	pro:intern dat:Space_Engineers ;
+	pro:genre wd:Q25397095 ;
+	pro:platforms wd:Q1406 ;
+	pro:genre wd:Q472055 , wd:Q2762504 .
+
+dat:Super_Hexagon a pro:Game ;
+	pro:wikidata wd:Q218568 ;
+	rdfs:label "Super Hexagon"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Super%20Hexagon%20-%20iPad%20Hexagon%2002.png> ;
+	pro:platforms wd:Q880016 ;
+	pro:dev wd:Q11709677 ;
+	pro:publisher wd:Q11709677 ;
+	pro:intern dat:Super_Hexagon ;
+	pro:genre wd:Q270948 ;
+	pro:platforms wd:Q388 , wd:Q1406 , wd:Q14116 , wd:Q94 , wd:Q48493 .
+
+dat:Millipede a pro:Game ;
+	pro:wikidata wd:Q968020 ;
+	rdfs:label "Millipede"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20M%C3%A9canique%20218.JPG> ;
+	pro:platforms wd:Q23882 ;
+	pro:dev wd:Q13409231 ;
+	pro:publisher wd:Q13409231 ;
+	pro:intern dat:Millipede ;
+	pro:platforms wd:Q172742 , wd:Q192851 , wd:Q206261 .
+
+dat:Sonic_Advance pro:dev wd:Q742390 .
+
+dat:Bubble_Bobble pro:dev wd:Q1054844 .
+
+dat:The_Swapper pro:dev wd:Q16988330 .
+
+dat:Job_Simulator a pro:Game ;
+	pro:wikidata wd:Q23762874 ;
+	rdfs:label "Job Simulator"@en ;
+	pro:genre wd:Q1610017 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Jobsim%20capsule%20big%20full.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q7114879 ;
+	pro:publisher wd:Q7114879 ;
+	pro:intern dat:Job_Simulator ;
+	pro:platforms wd:Q5014725 .
+
+dat:Kentucky_Route_Zero pro:platforms wd:Q19610114 , wd:Q13361286 .
+
+dat:TouchTone a pro:Game ;
+	pro:wikidata wd:Q19904518 ;
+	rdfs:label "TouchTone"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/TouchTone%20animated%20screenshot%202.gif> ;
+	pro:platforms wd:Q48493 ;
+	pro:dev wd:Q17716971 ;
+	pro:publisher wd:Q17716971 ;
+	pro:intern dat:TouchTone .
+
+dat:Madden_NFL_21 a pro:Game ;
+	pro:wikidata wd:Q96240062 ;
+	rdfs:label "Madden NFL 21"@en ;
+	pro:genre wd:Q63915391 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Madden%20NFL%20-%20snow%20game%20%283785699843%29.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q2667370 ;
+	pro:publisher wd:Q869106 ;
+	pro:intern dat:Madden_NFL_21 ;
+	pro:platforms wd:Q13361286 , wd:Q5014725 , wd:Q63184502 , wd:Q98973368 .
+
+dat:The_Banner_Saga a pro:Game ;
+	pro:wikidata wd:Q3932528 ;
+	rdfs:label "The Banner Saga"@en ;
+	pro:genre wd:Q1529437 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Banner%20Saga%20conversation%20screenshot.jpg> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q32860616 ;
+	pro:publisher wd:Q21013688 ;
+	pro:intern dat:The_Banner_Saga ;
+	pro:platforms wd:Q19610114 , wd:Q388 , wd:Q1406 , wd:Q14116 , wd:Q94 , wd:Q48493 .
+
+dat:Tooth_and_Tail a pro:Game ;
+	pro:wikidata wd:Q39266330 ;
+	rdfs:label "Tooth and Tail"@en ;
+	pro:genre wd:Q208189 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Tooth%20and%20Tail%20-%20Desert%20screenshot.png> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q47103585 ;
+	pro:publisher wd:Q47103585 ;
+	pro:intern dat:Tooth_and_Tail ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Tooth%20and%20Tail%20-%20Development%204.png> , <http://commons.wikimedia.org/wiki/Special:FilePath/Tooth%20and%20Tail%20-%20Splitscreen%20screeshot.png> ;
+	pro:platforms wd:Q388 , wd:Q1406 , wd:Q14116 .
+
+dat:Broforce a pro:Game ;
+	pro:wikidata wd:Q14558333 ;
+	rdfs:label "Broforce"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Broforce%20blade%20vs%20truck.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q28223113 ;
+	pro:publisher wd:Q5267669 ;
+	pro:intern dat:Broforce ;
+	pro:genre wd:Q1044478 ;
+	pro:platforms wd:Q5014725 , wd:Q19610114 , wd:Q1406 , wd:Q14116 .
+
+dat:Splatoon_2 pro:dev wd:Q20972825 .
+
+dat:1-2-Switch a pro:Game ;
+	pro:wikidata wd:Q28308644 ;
+	rdfs:label "1-2-Switch"@en ;
+	pro:genre wd:Q7888616 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/1-2-Switch%20Logo.svg> ;
+	pro:platforms wd:Q19610114 ;
+	pro:dev wd:Q20972825 ;
+	pro:publisher wd:Q8093 ;
+	pro:intern dat:1-2-Switch .
+
+dat:This_Is_the_Police a pro:Game ;
+	pro:wikidata wd:Q26218316 ;
+	rdfs:label "This Is the Police"@en ;
+	pro:genre wd:Q1150710 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/This%20Is%20the%20Police%20-%20Screenshot%2001.png> ;
+	pro:platforms wd:Q19610114 ;
+	pro:dev wd:Q32904801 ;
+	pro:publisher wd:Q1457468 ;
+	pro:intern dat:This_Is_the_Police ;
+	pro:genre wd:Q472055 ;
+	pro:platforms wd:Q388 , wd:Q1406 , wd:Q14116 ;
+	pro:genre wd:Q23916 , wd:Q2762504 ;
+	pro:platforms wd:Q13361286 , wd:Q5014725 .
+
+dat:Rocket_League a pro:Game ;
+	pro:wikidata wd:Q20031743 ;
+	rdfs:label "Rocket League"@en ;
+	pro:genre wd:Q1478420 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Rocket%20League%20coverart.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q18345499 ;
+	pro:publisher wd:Q2068658 ;
+	pro:intern dat:Rocket_League ;
+	pro:platforms wd:Q1406 , wd:Q14116 ;
+	pro:publisher wd:Q18345499 ;
+	pro:genre wd:Q2762504 ;
+	pro:platforms wd:Q19610114 , wd:Q13361286 , wd:Q5014725 .
+
+dat:Wasteland_3 a pro:Game ;
+	pro:wikidata wd:Q27943180 ;
+	rdfs:label "Wasteland 3"@en ;
+	pro:genre wd:Q744038 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Wasteland%203%20Gamescom%202019%20%2848605880617%29.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q2712143 ;
+	pro:publisher wd:Q73801 ;
+	pro:intern dat:Wasteland_3 ;
+	pro:publisher wd:Q553658 ;
+	pro:platforms wd:Q1406 , wd:Q14116 , wd:Q13361286 , wd:Q5014725 .
+
+dat:Doodle_Jump a pro:Game ;
+	pro:wikidata wd:Q1165270 ;
+	rdfs:label "Doodle Jump"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Doodle%20Jump.png> ;
+	pro:platforms wd:Q192851 ;
+	pro:dev wd:Q10786080 ;
+	pro:publisher wd:Q10786080 ;
+	pro:intern dat:Doodle_Jump ;
+	pro:platforms wd:Q193828 , wd:Q203597 , wd:Q4885200 , wd:Q483318 , wd:Q879989 , wd:Q19599580 , wd:Q64350339 .
+
+dat:Five_Nights_At_Ghost_House a pro:Game ;
+	pro:wikidata wd:Q65920335 ;
+	rdfs:label "Five Nights At Ghost House"@en ;
+	pro:genre wd:Q333967 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Five%20Nights%20At%20Ghost%20House.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q63645208 ;
+	pro:publisher wd:Q63645208 ;
+	pro:intern dat:Five_Nights_At_Ghost_House ;
+	pro:platforms wd:Q94 , wd:Q48493 .
+
+dat:Dyscourse a pro:Game ;
+	pro:wikidata wd:Q20967606 ;
+	rdfs:label "Dyscourse"@en ;
+	pro:genre wd:Q23916 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Dyscourse%20screenshot%206.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q7114879 ;
+	pro:publisher wd:Q7114879 ;
+	pro:intern dat:Dyscourse ;
+	pro:platforms wd:Q1406 , wd:Q14116 ;
+	pro:genre wd:Q2762504 .
+
+dat:Doodle_Jump pro:platforms wd:Q170323 , wd:Q94 , wd:Q48263 , wd:Q48493 .
+
+dat:Space_Invaders a pro:Game ;
+	pro:wikidata wd:Q220665 ;
+	rdfs:label "Space Invaders"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Space%20Invaders%20-%20Midway%27s.JPG> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q1054844 ;
+	pro:publisher wd:Q149947 ;
+	pro:intern dat:Space_Invaders ;
+	pro:platforms wd:Q10677 .
+
+dat:Celeste a pro:Game ;
+	pro:wikidata wd:Q28451532 ;
+	rdfs:label "Celeste"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Celeste%20box%20art%20final%202.png> ;
+	pro:platforms wd:Q5014725 ;
+	pro:dev wd:Q91620371 ;
+	pro:publisher wd:Q91620371 ;
+	pro:intern dat:Celeste ;
+	pro:platforms wd:Q19610114 , wd:Q388 , wd:Q1406 , wd:Q14116 , wd:Q13361286 .
+
+dat:Pid a pro:Game ;
+	pro:wikidata wd:Q2377898 ;
+	rdfs:label "Pid"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pid%20-%20Poster%201.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q10585120 ;
+	pro:publisher wd:Q10585120 ;
+	pro:intern dat:Pid ;
+	pro:platforms wd:Q14116 , wd:Q48263 ;
+	pro:genre wd:Q54767 ;
+	pro:platforms wd:Q170325 .
+
+dat:Paranoia a pro:Game ;
+	pro:wikidata wd:Q19602528 ;
+	rdfs:label "Paranoia"@en ;
+	pro:genre wd:Q27670585 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Paranoia%20-%20diskety.jpg> ;
+	pro:platforms wd:Q170434 ;
+	pro:dev wd:Q18927002 ;
+	pro:publisher wd:Q18927002 ;
+	pro:intern dat:Paranoia ;
+	pro:genre wd:Q208189 ;
+	pro:platforms wd:Q751046 .
+
+dat:Pool_Party a pro:Game ;
+	pro:wikidata wd:Q7228568 ;
+	rdfs:label "Pool Party"@en ;
+	pro:genre wd:Q868217 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Pool%20Party.jpg> ;
+	pro:platforms wd:Q8079 ;
+	pro:dev wd:Q15070355 ;
+	pro:publisher wd:Q3492217 ;
+	pro:intern dat:Pool_Party .
+
+dat:Cricket_Revolution a pro:Game ;
+	pro:wikidata wd:Q5184978 ;
+	rdfs:label "Cricket Revolution"@en ;
+	pro:genre wd:Q868217 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/CR%27s%20Packshot.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q6863981 ;
+	pro:publisher wd:Q6863981 ;
+	pro:intern dat:Cricket_Revolution .
+
+dat:Newfound_Courage a pro:Game ;
+	pro:wikidata wd:Q63252653 ;
+	rdfs:label "Newfound Courage"@en ;
+	pro:genre wd:Q23916 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Newfound%20Courage%20Launch%20Image.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q63252683 ;
+	pro:publisher wd:Q63252683 ;
+	pro:intern dat:Newfound_Courage ;
+	pro:platforms wd:Q14116 ;
+	pro:genre wd:Q3328821 , wd:Q2762504 , wd:Q1610017 , wd:Q54767 .
+
+dat:Lords_of_Time a pro:Game ;
+	pro:wikidata wd:Q6680182 ;
+	rdfs:label "Lords of Time"@en ;
+	pro:genre wd:Q23916 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Screenshot%20Lords%20of%20Time%20%28Level%209%2C%201983%29.jpg> ;
+	pro:platforms wd:Q3356274 ;
+	pro:dev wd:Q940646 ;
+	pro:publisher wd:Q940646 ;
+	pro:intern dat:Lords_of_Time ;
+	pro:platforms wd:Q100047 , wd:Q170434 , wd:Q478829 , wd:Q478833 , wd:Q627302 , wd:Q853547 , wd:Q23882 .
+
+dat:Star_Wars pro:dev wd:Q7918753 .
+
+dat:Apex_Legends pro:dev wd:Q54973235 .
+
+dat:Mortal_Kombat_11 pro:platforms wd:Q5014725 , wd:Q63184502 , wd:Q19610114 , wd:Q1406 , wd:Q13361286 .
+
+dat:Space_Invaders pro:platforms wd:Q172742 ;
+	pro:publisher wd:Q1054844 ;
+	pro:platforms wd:Q183259 , wd:Q184839 , wd:Q186437 , wd:Q188642 , wd:Q203992 , wd:Q206261 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Space%20Invaders.JPG> ;
+	pro:platforms wd:Q1136956 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Space%20invaders%20alien.svg> ;
+	pro:platforms wd:Q743222 , wd:Q853547 , wd:Q23882 , wd:Q48493 .
+
+dat:Noita a pro:Game ;
+	pro:wikidata wd:Q68680176 ;
+	rdfs:label "Noita"@en ;
+	pro:genre wd:Q270948 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Noita.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q100392399 ;
+	pro:publisher wd:Q100392399 ;
+	pro:intern dat:Noita ;
+	pro:genre wd:Q1143132 , wd:Q343568 , wd:Q2762504 , wd:Q5432283 .
+
+dat:Orwell a pro:Game ;
+	pro:wikidata wd:Q27940629 ;
+	rdfs:label "Orwell"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Orwell%20video%20game%20header%20B%20capsule.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q32860574 ;
+	pro:publisher wd:Q61629925 ;
+	pro:intern dat:Orwell ;
+	pro:platforms wd:Q1406 ;
+	pro:genre wd:Q1610017 ;
+	pro:platforms wd:Q14116 .
+
+dat:Armello a pro:Game ;
+	pro:wikidata wd:Q16927602 ;
+	rdfs:label "Armello"@en ;
+	pro:genre wd:Q2176159 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Armello%20-%20Screenshot%2002.png> ;
+	pro:platforms wd:Q19610114 ;
+	pro:dev wd:Q33252867 ;
+	pro:publisher wd:Q33252867 ;
+	pro:intern dat:Armello ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Armello%20-%20Screenshot%2004.png> ;
+	pro:genre wd:Q744038 , wd:Q2762504 ;
+	pro:platforms wd:Q388 , wd:Q1406 , wd:Q14116 , wd:Q94 , wd:Q48493 , wd:Q5014725 .
+
+dat:Dragon_Fin_Soup a pro:Game ;
+	pro:wikidata wd:Q16971760 ;
+	rdfs:label "Dragon Fin Soup"@en ;
+	pro:genre wd:Q1143132 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/DFS-11.jpg> ;
+	pro:platforms wd:Q188808 ;
+	pro:dev wd:Q61700161 ;
+	pro:publisher wd:Q61700161 ;
+	pro:intern dat:Dragon_Fin_Soup ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/DFS%20banner.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/DFSI%203.jpg> ;
+	pro:platforms wd:Q5014725 ;
+	pro:genre wd:Q2762504 .
+
+<http://api.pa1007.dev/data/Gnop!> a pro:Game ;
+	pro:wikidata wd:Q2070508 ;
+	rdfs:label "Gnop!"@en ;
+	pro:genre wd:Q868217 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Gnop%21.svg> ;
+	pro:platforms wd:Q43627 ;
+	pro:dev wd:Q4717777 ;
+	pro:publisher wd:Q4717777 ;
+	pro:intern <http://api.pa1007.dev/data/Gnop!> .
+
+dat:Nuclear_Throne a pro:Game ;
+	pro:wikidata wd:Q21775834 ;
+	rdfs:label "Nuclear Throne"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Nuclear%20Throne%20screenshot%2010.png> ;
+	pro:platforms wd:Q19610114 ;
+	pro:dev wd:Q7939006 ;
+	pro:publisher wd:Q7939006 ;
+	pro:intern dat:Nuclear_Throne ;
+	pro:genre wd:Q2762504 ;
+	pro:platforms wd:Q188808 , wd:Q388 , wd:Q1406 , wd:Q14116 , wd:Q5014725 .
+
+dat:Freedom_Planet a pro:Game ;
+	pro:wikidata wd:Q17182671 ;
+	rdfs:label "Freedom Planet"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Freedom%20Planet%20Cutscene.png> ;
+	pro:platforms wd:Q19610114 ;
+	pro:dev wd:Q33198490 ;
+	pro:publisher wd:Q8045013 ;
+	pro:intern dat:Freedom_Planet ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Freedom%20Planet%20Milla%20screenshot.png> , <http://commons.wikimedia.org/wiki/Special:FilePath/Freedom%20Planet%20Running%20Boss.PNG> ;
+	pro:genre wd:Q2762504 ;
+	pro:platforms wd:Q388 , wd:Q1406 , wd:Q14116 , wd:Q56942 ;
+	pro:genre wd:Q270948 ;
+	pro:platforms wd:Q5014725 .
+
+dat:Xonotic a pro:Game ;
+	pro:wikidata wd:Q596536 ;
+	rdfs:label "Xonotic"@en ;
+	pro:genre wd:Q185029 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Xonotic%200.8.2%20rocket.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q111743152 ;
+	pro:publisher wd:Q111743152 ;
+	pro:intern dat:Xonotic ;
+	pro:platforms wd:Q1406 , wd:Q14116 .
+
+dat:The_Expression_Amrilato a pro:Game ;
+	pro:wikidata wd:Q38278928 ;
+	rdfs:label "The Expression Amrilato"@en ;
+	pro:genre wd:Q54251760 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/SOJO%2004.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q61037734 ;
+	pro:publisher wd:Q4604373 ;
+	pro:intern dat:The_Expression_Amrilato ;
+	pro:platforms wd:Q14116 , wd:Q94 , wd:Q48493 ;
+	pro:publisher wd:Q61037734 ;
+	pro:genre wd:Q1323555 , wd:Q320568 , wd:Q1339223 , wd:Q689445 , wd:Q53911753 .
+
+dat:Space_Invaders pro:platforms wd:Q99775 , wd:Q170325 , wd:Q170434 .
+
+dat:The_Expression_Amrilato pro:genre wd:Q85341917 , wd:Q60616268 .
+
+dat:Warzone_2100 a pro:Game ;
+	pro:wikidata wd:Q386632 ;
+	rdfs:label "Warzone 2100"@en ;
+	pro:genre wd:Q208189 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Warzone%202100%20-%20base.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q96741285 ;
+	pro:publisher wd:Q679933 ;
+	pro:intern dat:Warzone_2100 ;
+	pro:platforms wd:Q1406 , wd:Q10677 ;
+	pro:publisher wd:Q10902322 ;
+	pro:platforms wd:Q14116 , wd:Q14656 ;
+	pro:publisher wd:Q96741285 ;
+	pro:genre wd:Q27670585 , wd:Q2762504 .
+
+dat:Pure_Pinball pro:dev wd:Q10556387 .
+
+dat:Shelter a pro:Game ;
+	pro:wikidata wd:Q15277884 ;
+	rdfs:label "Shelter"@en ;
+	pro:genre wd:Q21030988 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Shelter%20-%20Poster%201.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q10585120 ;
+	pro:publisher wd:Q10585120 ;
+	pro:intern dat:Shelter ;
+	pro:platforms wd:Q14116 .
+
+dat:Blackwood_Crossing a pro:Game ;
+	pro:wikidata wd:Q28398313 ;
+	rdfs:label "Blackwood Crossing"@en ;
+	pro:genre wd:Q23916 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Blackwood%20Crossing%20announcement%20screenshot%2002.png> ;
+	pro:platforms wd:Q13361286 ;
+	pro:dev wd:Q54304404 ;
+	pro:publisher wd:Q54303510 ;
+	pro:intern dat:Blackwood_Crossing ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Blackwood%20Crossing%20announcement%20screenshot%2003.png> , <http://commons.wikimedia.org/wiki/Special:FilePath/Blackwood%20Crossing%20announcement%20screenshot%2006.png> .
+
+dat:Dark_Scavenger a pro:Game ;
+	pro:wikidata wd:Q28127263 ;
+	rdfs:label "Dark Scavenger"@en ;
+	pro:genre wd:Q27670585 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Dark%20Scavenger%20screenshot%205.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q54305596 ;
+	pro:publisher wd:Q54305596 ;
+	pro:intern dat:Dark_Scavenger ;
+	pro:platforms wd:Q14116 .
+
+dat:Blackwood_Crossing pro:platforms wd:Q5014725 , wd:Q1406 .
+
+dat:Outer_Wilds a pro:Game ;
+	pro:wikidata wd:Q19631660 ;
+	rdfs:label "Outer Wilds"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Outer%20Wilds%20poster%20%28no%20credits%29.jpg> ;
+	pro:platforms wd:Q13361286 ;
+	pro:dev wd:Q69427151 ;
+	pro:publisher wd:Q38805988 ;
+	pro:intern dat:Outer_Wilds ;
+	pro:genre wd:Q343568 ;
+	pro:platforms wd:Q5014725 , wd:Q98973368 ;
+	pro:genre wd:Q27670585 ;
+	pro:platforms wd:Q19610114 , wd:Q1406 , wd:Q14116 .
+
+dat:Cupid_Parasite pro:dev wd:Q65032710 .
+
+dat:Caliber a pro:Game ;
+	pro:wikidata wd:Q48955079 ;
+	rdfs:label "Caliber"@en ;
+	pro:genre wd:Q380266 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Logotype%20Clbr.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q107268258 ;
+	pro:publisher wd:Q372471 ;
+	pro:intern dat:Caliber .
+
+dat:Rail_Route a pro:Game ;
+	pro:wikidata wd:Q107479225 ;
+	rdfs:label "Rail Route"@en ;
+	pro:genre wd:Q1050023 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Rail%20Route%20%E2%80%94%20Automate.png> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q107479280 ;
+	pro:publisher wd:Q107479280 ;
+	pro:intern dat:Rail_Route ;
+	pro:platforms wd:Q1406 , wd:Q14116 .
+
+dat:How_to_date_a_magical_girl a pro:Game ;
+	pro:wikidata wd:Q109886992 ;
+	rdfs:label "How to date a magical girl"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Htdamg%20affinity.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q109887226 ;
+	pro:publisher wd:Q109887226 ;
+	pro:intern dat:How_to_date_a_magical_girl ;
+	pro:platforms wd:Q14116 .
+
+dat:Rail_Route pro:genre wd:Q2762504 .
+
+dat:How_to_date_a_magical_girl pro:genre wd:Q16575965 , wd:Q689445 , wd:Q8018891 .
+
+dat:Caliber pro:genre wd:Q862490 .
+
+dat:Rail_Route pro:genre wd:Q1610017 .
+
+dat:Incredipede a pro:Game ;
+	pro:wikidata wd:Q3132373 ;
+	rdfs:label "Incredipede"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/IncredipedeScreenshot35.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q23795636 ;
+	pro:publisher wd:Q23795636 ;
+	pro:intern dat:Incredipede ;
+	pro:platforms wd:Q1406 , wd:Q14116 , wd:Q94 , wd:Q48493 .
+
+dat:Ether_One a pro:Game ;
+	pro:wikidata wd:Q19636612 ;
+	rdfs:label "Ether One"@en ;
+	pro:genre wd:Q23916 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Ether%20One%20cover%20artwork.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q108431347 ;
+	pro:publisher wd:Q108431347 ;
+	pro:intern dat:Ether_One .
+
+dat:Iron_Seed a pro:Game ;
+	pro:wikidata wd:Q16262979 ;
+	rdfs:label "Iron Seed"@en ;
+	pro:genre wd:Q61507686 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Ironseed-logo.png> ;
+	pro:platforms wd:Q47604 ;
+	pro:dev wd:Q104830824 ;
+	pro:publisher wd:Q1457205 ;
+	pro:intern dat:Iron_Seed ;
+	pro:genre wd:Q27670585 , wd:Q1892535 .
+
+dat:Rain_World a pro:Game ;
+	pro:wikidata wd:Q24877479 ;
+	rdfs:label "Rain World"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Rain%20World%20logo.jpg> ;
+	pro:platforms wd:Q19610114 ;
+	pro:dev wd:Q54310561 ;
+	pro:publisher wd:Q30145026 ;
+	pro:intern dat:Rain_World ;
+	pro:genre wd:Q21030988 ;
+	pro:platforms wd:Q1406 .
+
+dat:Dark_Scavenger pro:genre wd:Q23916 .
+
+dat:Vainglory a pro:Game ;
+	pro:wikidata wd:Q18156790 ;
+	rdfs:label "Vainglory"@en ;
+	pro:genre wd:Q1189206 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Vainglory%20-%20Koshka%20attacking%20a%20jungle%20monster.jpg> ;
+	pro:platforms wd:Q94 ;
+	pro:dev wd:Q54308709 ;
+	pro:publisher wd:Q54308709 ;
+	pro:intern dat:Vainglory ;
+	pro:platforms wd:Q48493 .
+
+dat:Dark_Scavenger pro:genre wd:Q744038 .
+
+dat:Rain_World pro:platforms wd:Q5014725 .
+
+dat:SCP_-_Containment_Breach a pro:Game ;
+	pro:wikidata wd:Q3178569 ;
+	rdfs:label "SCP - Containment Breach"@en ;
+	pro:genre wd:Q333967 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/SCP%20-%20Containment%20Breach.jpg> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q60161231 ;
+	pro:publisher wd:Q60161231 ;
+	pro:intern dat:SCP_-_Containment_Breach ;
+	pro:genre wd:Q2762504 .
+
+dat:Dragon_Fin_Soup pro:platforms wd:Q388 , wd:Q1406 , wd:Q10683 , wd:Q14116 .
+
+dat:Crawl a pro:Game ;
+	pro:wikidata wd:Q17511832 ;
+	rdfs:label "Crawl"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Crawl%20screenshot%203.png> ;
+	pro:platforms wd:Q13361286 ;
+	pro:dev wd:Q33509468 ;
+	pro:publisher wd:Q33509468 ;
+	pro:intern dat:Crawl ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Crawl%20screenshot%205.png> ;
+	pro:platforms wd:Q5014725 ;
+	pro:genre wd:Q1143132 ;
+	pro:platforms wd:Q19610114 , wd:Q388 , wd:Q1406 , wd:Q14116 ;
+	pro:genre wd:Q401831 .
+
+dat:Solitaire a pro:Game ;
+	pro:wikidata wd:Q909627 ;
+	rdfs:label "Solitaire"@en ;
+	pro:genre wd:Q29471320 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Klondike%20%28solitare%29.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q48937880 ;
+	pro:publisher wd:Q2283 ;
+	pro:intern dat:Solitaire .
+
+dat:SCP-087 a pro:Game ;
+	pro:wikidata wd:Q61982216 ;
+	rdfs:label "SCP-087"@en ;
+	pro:genre wd:Q59536813 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/SCP-087.PNG> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q79054045 ;
+	pro:publisher wd:Q79054045 ;
+	pro:intern dat:SCP-087 ;
+	pro:platforms wd:Q14116 .
+
+dat:Solitaire pro:genre wd:Q2056928 .
+
+dat:SCP-087 pro:genre wd:Q2762504 .
+
+dat:Neon_Tail a pro:Game ;
+	pro:wikidata wd:Q98841770 ;
+	rdfs:label "Neon Tail"@en ;
+	pro:genre wd:Q54323360 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Neon%20Tail%20logo.png> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q99169076 ;
+	pro:publisher wd:Q99169076 ;
+	pro:intern dat:Neon_Tail .
+
+dat:The_Ball a pro:Game ;
+	pro:wikidata wd:Q129114 ;
+	rdfs:label "The Ball"@en ;
+	pro:genre wd:Q54767 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Ball%20-%20Screenshot%2002.jpg> ;
+	pro:platforms wd:Q1391641 ;
+	pro:dev wd:Q18712558 ;
+	pro:publisher wd:Q130763 ;
+	pro:intern dat:The_Ball .
+
+dat:Need_for_Speed_Heat a pro:Game ;
+	pro:wikidata wd:Q66439292 ;
+	rdfs:label "Need for Speed Heat"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Need%20for%20Speed%20Heat%20Car%20Gamescom%202019%20%2848605686406%29.jpg> ;
+	pro:platforms wd:Q13361286 ;
+	pro:dev wd:Q14148399 ;
+	pro:publisher wd:Q173941 ;
+	pro:intern dat:Need_for_Speed_Heat .
+
+dat:Neon_Tail pro:genre wd:Q2762504 , wd:Q71475833 .
+
+dat:Need_for_Speed_Heat pro:platforms wd:Q5014725 .
+
+dat:The_Ball pro:platforms wd:Q1406 .
+
+dat:Math_Grand_Prix a pro:Game ;
+	pro:wikidata wd:Q19706867 ;
+	rdfs:label "Math Grand Prix"@en ;
+	pro:genre wd:Q860750 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Math%20Gran%20Prix%20Atari%202600.jpg> ;
+	pro:platforms wd:Q206261 ;
+	pro:dev wd:Q13409231 ;
+	pro:publisher wd:Q13409231 ;
+	pro:intern dat:Math_Grand_Prix .
+
+dat:Need_for_Speed_Heat pro:platforms wd:Q1406 .
+
+dat:The_Ball pro:genre wd:Q185029 .
+
+dat:Math_Grand_Prix pro:genre wd:Q1224999 .
+
+dat:Metal_Gear_Solid_HD_Collection pro:dev wd:Q15070279 .
+
+dat:Demon_Turf a pro:Game ;
+	pro:wikidata wd:Q109380403 ;
+	rdfs:label "Demon Turf"@en ;
+	pro:genre wd:Q828322 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Demon%20Turf%20Promotional%20Art.jpg> ;
+	pro:platforms wd:Q19610114 ;
+	pro:dev wd:Q109592799 ;
+	pro:publisher wd:Q109592760 ;
+	pro:intern dat:Demon_Turf ;
+	pro:platforms wd:Q1406 , wd:Q13361286 , wd:Q5014725 , wd:Q63184502 , wd:Q98973368 .
+
+dat:A_Short_Hike a pro:Game ;
+	pro:wikidata wd:Q66035140 ;
+	rdfs:label "A Short Hike"@en ;
+	pro:genre wd:Q2762504 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/A%20Short%20Hike%20Screenshot%205.png> ;
+	pro:platforms wd:Q98973368 ;
+	pro:dev wd:Q96253514 ;
+	pro:publisher wd:Q96253514 ;
+	pro:intern dat:A_Short_Hike .
+
+dat:Chaos_Reborn a pro:Game ;
+	pro:wikidata wd:Q16736194 ;
+	rdfs:label "Chaos Reborn"@en ;
+	pro:genre wd:Q1529437 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Chaos%20Reborn%20-%20Screenshot%20-%20Law%20Close-up.jpg> ;
+	pro:platforms wd:Q388 ;
+	pro:dev wd:Q30645414 ;
+	pro:publisher wd:Q30645414 ;
+	pro:intern dat:Chaos_Reborn ;
+	pro:platforms wd:Q1406 , wd:Q14116 .
+
+dat:A_Short_Hike pro:platforms wd:Q19610114 , wd:Q388 , wd:Q1406 , wd:Q14116 ;
+	pro:genre wd:Q23916 ;
+	pro:platforms wd:Q13361286 .
+
+dat:SCP-087-B a pro:Game ;
+	pro:wikidata wd:Q7487038 ;
+	rdfs:label "SCP-087-B"@en ;
+	pro:genre wd:Q59536813 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/SCP-087.PNG> ;
+	pro:platforms wd:Q1406 ;
+	pro:dev wd:Q60161231 ;
+	pro:publisher wd:Q60161231 ;
+	pro:intern dat:SCP-087-B .
+
+dat:A_Short_Hike pro:platforms wd:Q5014725 .
+
+dat:SCP-087-B pro:genre wd:Q2762504 .
+
+dat:Gran_Turismo_5 a pro:Game ;
+	pro:wikidata wd:Q773395 ;
+	rdfs:label "Gran Turismo 5"@en ;
+	pro:genre wd:Q1417032 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Gran%20turismo%20square%20series%20logo%20%28coloured%29.svg> ;
+	pro:platforms wd:Q10683 ;
+	pro:dev wd:Q1053684 ;
+	pro:publisher wd:Q18594 ;
+	pro:intern dat:Gran_Turismo_5 .
+
+dat:Operation_Thunderbolt a pro:Game ;
+	pro:wikidata wd:Q1634991 ;
+	rdfs:label "Operation Thunderbolt"@en ;
+	pro:genre wd:Q1044478 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Taito%20Operation%20Thunderbolt.JPG> ;
+	pro:platforms wd:Q23882 ;
+	pro:dev wd:Q1054844 ;
+	pro:publisher wd:Q1054844 ;
+	pro:intern dat:Operation_Thunderbolt .
+
+dat:System_Shock_2 pro:dev wd:Q1131475 .
+
+dat:Operation_Thunderbolt pro:platforms wd:Q99775 , wd:Q100047 , wd:Q183259 , wd:Q478829 , wd:Q627302 , wd:Q667808 .
+
+dat:Qix a pro:Game ;
+	pro:wikidata wd:Q1953575 ;
+	rdfs:label "Qix"@en ;
+	pro:genre wd:Q270948 ;
+	pro:image <http://commons.wikimedia.org/wiki/Special:FilePath/Qix%20Arcade.jpg> ;
+	pro:platforms wd:Q99775 ;
+	pro:dev wd:Q1054844 ;
+	pro:publisher wd:Q1054844 ;
+	pro:intern dat:Qix ;
+	pro:platforms wd:Q100047 , wd:Q172742 , wd:Q186437 , wd:Q743222 , wd:Q1282269 .
