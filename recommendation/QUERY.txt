@@ -1,0 +1,40 @@
+prefix pro: <http://api.pa1007.dev/ontology/>
+prefix dat: <http://api.pa1007.dev/data/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+
+
+select distinct ?g ( SAMPLE(?pic ) as ?picture) ?label where{ # START
+	
+  ?g pro:genre ?c . 
+  ?g pro:platforms ?pl .
+  ?g pro:image ?pic .
+    ?g rdfs:label ?label.
+
+  	{{
+    select distinct ?c ?pl where {
+		?loves pro:genre ?c .
+		?p pro:genre ?c .
+      	?p pro:platforms ?pl
+		VALUES ?loves { dat:Dead_Island dat:Five_Nights_At_Ghost_House }
+     }}
+     UNION {
+    select distinct ?c ?pl where {
+		?likes pro:genre ?c .
+		?p pro:genre ?c .
+      	?p pro:platforms ?pl
+		VALUES ?likes { dat:Star_Trek dat:Homefront }
+     }}
+     MINUS { 
+    select distinct ?c where {
+		?hates pro:genre ?c .
+		?p pro:genre ?c .
+      	?diskile pro:genre ?c .
+		?p pro:genre ?c .
+		VALUES ?hates { dat:Rainbow_Six_Siege dat:Action_Fighter dat:FIFA_99 dat:Code_Lyoko:_Quest_for_Infinity }.
+      	VALUES ?diskile { dat:Rocket_leagues dat:Stardrew_Valley }
+   }}
+  }
+  
+} # End
+group by ?g ?label
