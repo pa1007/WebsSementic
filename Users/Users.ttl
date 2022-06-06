@@ -16,3 +16,135 @@ dat:pa1007
           dat:Abraca;
     pro:Hates dat:Stardrew_Valley,
           dat:Skelattack.
+
+dat:diatox 
+    a pro:User ;
+    rdfs:label "diatox"@en ;
+    pro:Loves dat:Rainbow_Six_Siege,
+          dat:Rocket_leagues;
+    pro:Likes dat:Stardrew_Valley,
+          dat:Far_Cry;
+    pro:Neutral dat:Farming_Simulator,
+          dat:World_of_Tanks;
+    pro:Dislikes dat:The_Simpsons,
+          dat:Abraca;
+    pro:Hates dat:DuckTales,
+          dat:Beatmania_III.
+
+
+dat:awelie 
+    a pro:User ;
+    rdfs:label "awelie"@en ;
+    pro:Loves dat:Just_Dance_2,
+          dat:Super_Mario_64;
+    pro:Likes dat:Wii_Sports,
+          dat:Wii_Fit;
+    pro:Neutral dat:Mortal_Kombat,
+          dat:Farming_Simulator;
+    pro:Dislikes dat:Stationfall,
+          dat:Stardrew_Valley;
+    pro:Hates dat:Doom,
+          dat:Tropico_3.
+
+
+dat:metroidpam 
+    a pro:User ;
+    rdfs:label "metroidpam"@en ;
+    pro:Loves dat:Minecraft,
+          dat:Dofus;
+    pro:Likes dat:Portal_2,
+          dat:Tetris_DS;
+    pro:Neutral dat:Stardrew_Valley,
+          dat:Galaxian;
+    pro:Dislikes dat:Rocket_leagues,
+          dat:Crisis_Zone;
+    pro:Hates dat:Far_Cry_2,
+          dat:Age_of_Empires.
+
+
+dat:azerty7 
+    a pro:User ;
+    rdfs:label "azerty7"@en ;
+    pro:Loves dat:Pokémon_Ruby,
+          dat:Cloud;
+    pro:Likes dat:Homefront,
+          dat:Star_Trek;
+    pro:Neutral dat:The_Last_of_Us_Part_II,
+          dat:Amerzone;
+    pro:Dislikes dat:Rocket_leagues,
+          dat:Syberia_II;
+    pro:Hates dat:Stardrew_Valley,
+          dat:Trine_2.
+
+dat:arctu19 
+    a pro:User ;
+    rdfs:label "arctu19"@en ;
+    pro:Loves dat:Apex_Legends,
+          dat:Rochard;
+    pro:Likes dat:Time_Traveler,
+          dat:Genomics_Digital_Lab;
+    pro:Neutral dat:Just_Dance_4,
+          dat:Tiger-Heli;
+    pro:Dislikes dat:Paradise,
+          dat:Dead_Island;
+    pro:Hates dat:Final_Fantasy_VI,
+          dat:Rebelstar.
+
+
+dat:noxi 
+    a pro:User ;
+    rdfs:label "noxi"@en ;
+    pro:Loves dat:Chill,
+          dat:World_of_Warplanes;
+    pro:Likes dat:Everlasting_Summer,
+          dat:VVVVVV;
+    pro:Neutral dat:Asteroids,
+          dat:Football_Manager_2021;
+    pro:Dislikes dat:Cocoto_Kart_Racer,
+          dat:Adventure;
+    pro:Hates dat:System_Shock_2,
+          dat:Absolver.
+
+
+dat:skar 
+    a pro:User ;
+    rdfs:label "skar"@en ;
+    pro:Loves dat:Space_Engineers,
+          dat:Job_Simulator;
+    pro:Likes dat:Rocket_leagues,
+          dat:The_Banner_Saga;
+    pro:Neutral dat:Orwell,
+          dat:Pool_Party;
+    pro:Dislikes dat:Doodle_Jump,
+          dat:Xonotic;
+    pro:Hates dat:Dragon_Fin_Soup,
+          dat:Celeste.
+
+
+dat:lord 
+    a pro:User ;
+    rdfs:label "lord"@en ;
+    pro:Loves dat:Dark_Scavenger,
+          dat:Warzone_2100;
+    pro:Likes dat:Caliber,
+          dat:How_to_date_a_magical_girl;
+    pro:Neutral dat:Ether_One,
+          dat:The_Ball;
+    pro:Dislikes dat:Vainglory,
+          dat:Need_for_Speed_Heat;
+    pro:Hates dat:SCP-087,
+          dat:Solitaire.
+
+dat:zile 
+    a pro:User ;
+    rdfs:label "zile"@en ;
+    pro:Loves dat:Ataxx,
+          dat:Borderlands_2;
+    pro:Likes dat:Trine_2,
+          dat:Uno;
+    pro:Neutral dat:N,
+          dat:Monaco_GP;
+    pro:Dislikes dat:Ico,
+          dat:Final_Fantasy_VII;
+    pro:Hates dat:The_Longest_Journey,
+          dat:Just_Dance_2022.
