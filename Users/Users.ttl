@@ -1,0 +1,18 @@
+@prefix pro: <http://api.pa1007.dev/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dat: <http://api.pa1007.dev/data/> .
+
+dat:pa1007 
+    a pro:User ;
+    rdfs:label "pa1007"@en ;
+    pro:Loves dat:Minecraft,
+          dat:Rainbow_Six_Siege;
+    pro:Likes dat:Software_Inc,
+          dat:Uno;
+    pro:Neutral dat:Far_Cry,
+          dat:Farming_Simulator;
+    pro:Dislikes dat:Rocket_leagues,
+          dat:Abraca;
+    pro:Hates dat:Stardrew_Valley,
+          dat:Skelattack.
