@@ -1,0 +1,24 @@
+prefix pro: <http://api.pa1007.dev/ontology/>
+prefix dat: <http://api.pa1007.dev/data/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wds: <http://www.wikidata.org/entity/statement/>
+PREFIX wdv: <http://www.wikidata.org/value/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT {
+  ?url a pro:Game ; pro:wikidata ?item; rdfs:label ?name ; pro:genre ?g ; pro:image ?pic;
+      pro:platforms ?plat; pro:dev ?dev ; pro:publisher ?pub; pro:intern ?url;
+}
+WHERE {
+?item wdt:P31 wd:Q7889 .
+?item wdt:P18 ?pic .
+?item wdt:P136 ?g .
+?item wdt:P123 ?pub .
+?item wdt:P178 ?dev.
+?item wdt:P400 ?plat.
+?item rdfs:label ?name .
+BIND(REPLACE(str(?name), " ", "_") AS ?id).  
+BIND(REPLACE(str(?id), "[,.;':]", "") AS ?id).  
+bind(uri(concat("http://api.pa1007.dev/data/",str(?id))) as ?url) .
+filter (lang(?name) = 'en')
+}
