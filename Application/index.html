@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <script src="games.json" type="text/javascript"></script>
+    <link href="main.css" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $.getJSON("games.json", function (json) {
+                $(".test").select2({
+                    placeholder: "Name of game",
+                    allowClear: true,
+                    data: json,
+                    minimumInputLength: 2,
+                    width: "off"
+                });
+            });
+        });
+        help = []
+
+        function f1() {
+            let game = $(".test").find(':selected').text();
+            let slide = $("#input-slider-handle").val()
+            let what = ""
+            if (slide === "0") {
+                what = "hate"
+            } else if (slide === "25") {
+                what = "dislike"
+            } else if (slide === "50") {
+                what = 'neutral'
+            } else if (slide === "75") {
+                what = 'like'
+            } else {
+                what = 'love'
+            }
+            help.push({name: game, value: what})
+            update()
+        }
+
+        function update() {
+            $("#boutons").empty()
+            $("#pictures").empty()
+            helpparsed = help.map(item => ({name: "dat:" + item.name, value: item.value}))
+            loves = helpparsed.filter(item => item.value === "love").map(item => item.name)
+            like = helpparsed.filter(item => item.value === "like").map(item => item.name)
+            hates = helpparsed.filter(item => item.value === "hate").map(item => item.name)
+            diskile = helpparsed.filter(item => item.value === "dislike").map(item => item.name)
+
+            body = `prefix pro: <http://api.pa1007.dev/ontology/>
+prefix dat: <http://api.pa1007.dev/data/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?g ( SAMPLE(?pic ) as ?picture) ?label where{ # START
+  ?g pro:genre ?c .
+  ?g pro:platforms ?pl .
+  ?g pro:image ?pic .
+    ?g rdfs:label ?label.
+ {{
+    select distinct ?c ?pl where {
+?loves pro:genre ?c .
+?p pro:genre ?c .
+     ?p pro:platforms ?pl
+VALUES ?loves { ${loves.join(" ")} }
+     }}
+     UNION {
+    select distinct ?c ?pl where {
+?likes pro:genre ?c .
+?p pro:genre ?c .
+     ?p pro:platforms ?pl
+VALUES ?likes { ${like.join(" ")} }
+     }}
+     MINUS {
+    select distinct ?c where {
+?hates pro:genre ?c .
+?p pro:genre ?c .
+     ?diskile pro:genre ?c .
+?p pro:genre ?c .
+VALUES ?hates { ${hates.join(" ")} }.
+     VALUES ?diskile { ${diskile.join(" ")}}
+   }}
+  }}
+group by ?g ?label`
+            console.log(`https://api.pa1007.dev/sparql/querydir/` + encodeURIComponent(body))
+            var formdata = new FormData();
+            formdata.append("body", body)
+            console.log(body)
+            fetch(`https://api.pa1007.dev/sparql/query/`, {
+                method: "post",
+                body: formdata
+            }).then(response => response.text())
+                .then(result => {
+                    console.log(result)
+                    re = JSON.parse(result)
+                    console.log(re)
+                    for (e in re.results.bindings) {
+                        blc = re.results.bindings[e]
+                        name = blc.label.value
+                        pic = blc.picture.value
+                        $("#pictures").append("<div class=\"contenant\">\n" +
+                            "                <img class='imagetro' src=\"" + pic + "\" width='90' height='150' alt='" + name + "'>\n<p class='text'> " + name + " </p>\n" + "            </div>"
+                        )
+                    }
+
+
+                })
+                .catch(error => console.log('error', error))
+
+            for (const argument of help) {
+                $("#boutons").append("            <button>\n" + argument.name + "            </button>")
+
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+<div id="conteneur">
+    <div id="saisie">
+        <div class="input">
+            <select class="test" id="input-text" style="position: relative"></select>
+            <input id="button" onclick="f1()" src=pictures/button-add.png style="position: absolute;" type=image
+                   value="/">
+        </div>
+        <div class="input" style="--step:10; --min:20; --max:100">
+            <input id="input-slider-handle" max="100" min="0" step="25" type='range'/>
+        </div>
+    </div>
+    <div class="print">
+        <div id="boutons">
+            <button>
+                Animal Crossing
+            </button>
+        </div>
+        <div id="pictures">
+            <div class="contenant">
+                <img src="pictures/acnh.jfif">
+                <p>Animal Crossing</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>
+            Web Semantic Project <br>
+            Amélie JACOB--GUIZON Louis VOISIN Paul DEBANO Paul-Alexandre FOURRIERE
+        </p>
+    </div>
+</div>
+</body>
+</html>
